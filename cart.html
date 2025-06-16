@@ -78,7 +78,7 @@
             fetchData();
         })
         function fetchData() {
-            fetch('https://flipkart-backend-eslu.onrender.com/cart').then(e => e.json()).then(e => showData(e))
+            fetch('https://flipkart-clone-be-mh7j.onrender.com/cart').then(e => e.json()).then(e => showData(e))
         }
         function showData(data) {
             let result = data.map(e => card(e.id, e.img, e.title, e.price))
@@ -103,7 +103,7 @@
             }
         })
         function deltecart(id) {
-            fetch(`https://flipkart-backend-eslu.onrender.com/cart/${id}`, {
+            fetch(`https://flipkart-clone-be-mh7j.onrender.com/cart/${id}`, {
                 method: 'DELETE',
             }).then(e => {
                 if (e.ok) {
