@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Mobile About</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <header class="bg-primary position-fixed top-0 w-100">
+        <nav class=" d-flex justify-content-around m-auto align-items-center flex-sm-column flex-lg-row navbar-expand-lg">
+            <a href="" class="d-sm-none d-lg-inline-block"><img src="./images/logo.svg" alt=""></a>
+            <ul class="w-75 d-flex align-items-center justify-content-between list-unstyled flex-sm-column flex-lg-row">
+                <input type="text" placeholder="Search for products, brands and more" class="d-inline-block mb-sm-2">
+                <li><span><a href="" class="bg-white pt-1 pb-1 ps-4 pe-4 text-primary"><b>Login</b></a></span>
+                    <div class="login-info-child position-absolute bg-white">
+                        <div class="lg-top d-flex justify-content-between p-2">
+                          <h5>New Customer ?</h5>
+                          <h5><a href="">Sign Up</a></h5>
+                        </div>
+                        <hr class="m-0">
+                        <div class="p-3">
+                          <span class="d-inline-block mb-2 p-1"><i class="fa-regular fa-circle-user text-primary"></i> <a href="">My Profile</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-solid fa-plus text-primary"></i> <a href="">Flipkart Plus Zone</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-solid fa-box text-primary"></i> <a href="">Orders</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-regular fa-heart text-primary"></i> <a href="">Wishlists</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-solid fa-gift text-primary"></i> <a href="">rewards</a></span><br>
+                          <span class="p-2 d-inline-block"><i class="fa-solid fa-vr-cardboard text-primary"></i> <a href="">Gift Cards</a></span>
+                        </div>
+                      </div>
+                </li>
+                <li><span><a href=""><b>Become a Seller</b></a></span></li>
+                <li><span><a href=""><b>More <i class="bi bi-chevron-down"></i></b></a></span></li>
+                <li><span><a href="./cart.html"><b><i class="bi bi-cart"></i> Cart</b></a></span></li>
+            </ul>
+        </nav>
+    </header>
+    <ul id="outer" class="list-unstyled d-lg-flex justify-content-around bg-white pt-2 pb-2 tp-nav align-items-center position-absolute w-100 d-sm-none">
+        <li><a href=""><b>Electronics</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>TVs & Appliances</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Men</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Women</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Baby & Kids</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Home & Furniture</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Sports,Books & More</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Flights</b></a></li>
+        <li><a href=""><b>Offer Zone</b></a></li>
+    </ul>
+    <div class="mb-about-parent container bg-white">
+        <div class="mb-btns position-absolute ms-md-5 ps-md-5 ms-sm-5 ps-sm-4 ms-lg-0 ps-lg-0">
+            <button style="background-color: #fb641b;" class="text-white ms-md-5 ms-lg-0 add-cart"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+            <button class="me-2 bg-warning text-white"><i class="fa-solid fa-bolt"></i> Buy Now</button>
+        </div>
+        <div class="mb-about-info d-flex flex-sm-column flex-lg-row mt-5">
+            <div class="mob-photos d-flex overflow-auto m-md-auto m-lg-0">
+                <ul class="d-flex flex-column list-unstyled">
+                    <li><img src="./images/vi3.webp" alt=""></li>
+                    <li><img src="./images/vi3.webp" alt=""></li>
+                    <li><img src="./images/vi3fr.webp" alt=""></li>
+                    <li><img src="./images/vi3-back.webp" alt=""></li>
+                    <li><img src="./images/vi3fr.webp" alt=""></li>
+                    <li><img src="./images/vi3-back.webp" alt=""></li>
+                    <li><img src="./images/vi3fr.webp" alt=""></li>
+                    <li><img src="./images/vi3-back.webp" alt=""></li>
+                    <li><img src="./images/vi3fr.webp" alt=""></li>
+                    <li><img src="./images/vi3-back.webp" alt=""></li>
+                </ul>
+                <div class="pr-image w-100 text-center pt-5" id="main-parent-img">
+                    <img src="./images/vi3.webp" alt="">
+                </div>
+            </div>
+            <div class="mb-reviews w-100">
+                <ul class="fs-6 d-lg-flex list-unstyled justify-content-around align-items-center d-sm-none">
+                    <li><a href="" class="text-dark">Home</a></li>
+                    <li><a href="" class="text-dark">Mobile Acc...</a></li>
+                    <li><a href="" class="text-dark">Mobiles</a></li>
+                    <li><a href="" class="text-dark">Vivo Mobiles</a></li>
+                    <li><a href="" class="text-dark">Vivo T2 Pro 5...</a></li>
+                    <input type="checkbox" name="" id=""> compare
+                    <p class="mt-2">share</p>
+                </ul>
+                <span class="fs-5" id="main-parent-img-title"></span><br>
+                <p class="pt-2 m-0"><span class="badge bg-success">4.5</span> <span class="text-secondary">86,558 Ratings & 7,622 Reviews <img src="./images/fpass.png" alt="" height="21px" width="77px"></span><br><span class="text-success">Extra $3000 off</span></p>
+                <p><span class="fs-2">$ 24,999</span> <span class="text-secondary fs-6">$27999</span> <span class="text-success">$10%</span></p>
+                <div class="offers">
+                    <h2 class="fs-5">Available Offers</h2>
+                    <p class="fs-6"><img src="./images/badge.webp" alt="" height="18px" width="18px"> Bank OfferGet ₹25* instant discount for the 1st Flipkart Order using Flipkart UPIT&C</p>
+                    <p class="fs-6"><img src="./images/badge.webp" alt="" height="18px" width="18px"> Bank Offer5% Cashback on Flipkart Axis Bank CardT&C</p>
+                    <p class="fs-6"><img src="./images/badge.webp" alt="" height="18px" width="18px"> Bank Offer₹2000 Off On HDFC Bank Credit and Debit Card Transactions.T&C</p>
+                    <p class="fs-6"><img src="./images/badge.webp" alt="" height="18px" width="18px"> Special PriceGet extra ₹3000 off (price inclusive of cashback/coupon)T&C</p>
+                    <a href="">View 14 More Offers</a>
+                    <div class="row">
+                        <div class="col-sm-12 m-auto col-lg-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title fs-6"><input type="radio"> Buy With Exchange $24,999</h5>
+                              <hr>
+                              <input type="radio"> Buy With Exchange Up To $20,000 Off
+                              <span class="text-danger fs-6">Enter Pincode To Check if Exchange is Available</span>
+                            </div>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="mt-5">1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box AccessoriesKnow More</div>
+                    <div class="mb-information d-flex align-items-center">
+                        <div class="mb-color d-flex w-50 align-items-center justify-content-around">
+                            <p>color</p>
+                            <span class="d-inline-block bg-primary"><img src="./images/vi1.webp" alt="" class="w-100"></span>
+                            <span class="d-inline-block bg-primary"><img src="./images/vi2.webp" alt="" class="w-100"></span>
+                        </div>
+                        <div class="mb-storage w-50 d-flex align-items-center justify-content-around">
+                            <p>Storage</p>
+                            <span class="d-inline-block border text-center p-1">128 GB</span>
+                            <span class="d-inline-block border text-center p-1">256 GB</span>
+                        </div>
+                    </div>
+                    <div class="delhivery d-flex mt-5 align-items-center">
+                        <p>Delhivery :</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span><input type="text" class="" placeholder="Enter delhivery Pin Code"><span class="text-primary">Check</span></span>
+                    </div>
+                    <p class="fs-6"><b>Delivery by28 Apr, Sunday</b>|Free₹40 ?<br>
+                        if ordered before 3:42 PM
+                    </p>
+                    <a href="">View Details</a>
+                    <div class="mb-details d-flex mt-3 align-items-center justify-content-between">
+                        <div class="mb-highlights d-flex w-50">
+                            <p class="text-secondary">Highlights</p>
+                            <ul>
+                                <li>8 GB RAM | 256 GB ROM</li>
+                                <li>17.22 cm (6.78 inch) Full HD+ Display</li>
+                                <li>64MP + 2MP | 16MP Fron Camera</li>
+                                <li>4600 MAH Battery</li>
+                                <li>Dimensity 1200 Processor</li>
+                            </ul>
+                        </div>
+                        <div class="mb-pay d-lg-flex w-50 d-sm-none">
+                            <p class="text-secondary">Easy Payments <br> Options</p>
+                            <ul>
+                                <li>No cost EMI starting from ₹8,333/month</li>
+                                <li>Cash on Delivery</li>
+                                <li>Net banking & Credit/ Debit/ ATM card</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mb-seller mt-3 d-flex ">
+                        <span class="text-secondary">Seller</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <p>
+                                <a href="">Clostail <span class="badge bg-primary text-white">3.7</span></a><br>
+                                <ul>
+                                    <li>7 Days Service Center Replacement/Repair</li>
+                                    <li>GST invoice available</li>
+                                </ul>
+                            </p>
+                            <a href="">See Other Sellers</a>
+                        </div>
+                    </div>
+                    <div class="mb-description d-flex mt-3">
+                        <p class="text-secondary">Description</p>&nbsp;&nbsp;
+                        <span>
+                            The T2 Pro 5G smartphone features a 3D curved AMOLED screen providing a bright display with a peak brightness of 1300 nits. Improve your performance with the MediaTek Dimensity 7200 processor. Powered with a 64 MP main camera with OIS and a night camera with Aura Light, keep clicking stunning pictures all day and night. This smartphone is slim, lightweight and boasts a premium design with AG glass back cover. Available in 8 GB+8 GB RAM, and ROM fused together with an optimised algorithm, you can easily use around 27 apps simultaneously. Powered by a 4600 mAH large battery, you can quickly boost your phone’s charge with the 66 W Flash Charge.
+                        </span>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header">
+                          <h3 class="pt-2 pb-2">Product Description</h3>
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0 d-flex">
+                            <img src="./images/videscr.webp" alt="" height="126px" width="168px">
+                            <div class="mb-tp-cont ps-4">
+                                <h4>3D Curved AMOLED Display</h4>
+                                <span class="fs-6">
+                                    T2 Pro 5G features a 3D curved AMOLED screen with 120 Hz refresh rate. T2 Pro 5G can cover 100% cinema-grade DCI-P3 Color Gamut, providing full and bright color display, comparable to professional cinema-grade image quality. A maximum local peak brightness of 1300 nits. This allows for clear visibility even in direct sunlight.
+                                </span>
+                            </div>
+                          </blockquote><hr>
+                          <blockquote class="blockquote mb-0 d-flex">
+                              <div class="mb-tp-cont pe-4">
+                                  <h4>Extreme Performance with MTK D7200</h4>
+                                  <span class="fs-6">
+                                    The all-new MediaTek Dimensity 7200 is a powerful 4 nm chipset. Built on the flagship-grade TSMC 2nd generation 4 nm process, aiming for a score of 7,20,000+ to deliver superior energy efficient performance.
+                                  </span>
+                              </div>
+                            <img src="./images/videscr.webp" alt="" height="126px" width="168px">
+                          </blockquote><hr>
+                          <a href="">View All Features</a>
+                        </div>
+                    </div>
+                    <div class="card mb-specifications mt-4">
+                        <div class="card-header">
+                            <h3>Specifications</h3>
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0 fs-6">
+                            <div class="general">
+                                <p>General</p>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span class="text-secondary fs-6 w-50">In The Box</span>
+                                    <span class="fs-6">Handset, USB Cable, Charger, Eject Tool, Phone Case, Protective Film (Applied), Warranty Card, Quick Start Guide</span>
+                                </div>
+                                <div class="d-flex w-50 justify-content-between mb-3">
+                                    <span class="text-secondary">Model Number</span>
+                                    <span>V2321</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3 w-50">
+                                    <span class="text-secondary fs-6">Color</span>
+                                    <span class="fs-6">Dune Gold</span>
+                                </div>
+                                <div class="d-flex justify-content-between w-50 mb-3">
+                                    <span class="text-secondary fs-6">Browser Type</span>
+                                    <span class="fs-6">Smartphones</span>
+                                </div>
+                                <div class="d-flex justify-content-between w-50 mb-3">
+                                    <span class="text-secondary fs-6">SIM Type</span>
+                                    <span class="fs-6">Dua SIM</span>
+                                </div>
+                                <div class="d-flex justify-content-between w-50 mb-3">
+                                    <span class="text-secondary fs-6">Hybrid Sim Slot</span>
+                                    <span class="fs-6">No</span>
+                                </div><hr>
+                                <a href="">Read More</a>
+                            </div>
+                          </blockquote>
+                        </div>
+                    </div>
+                    <div class="card mb-with-acc mt-4">
+                        <div class="card-header">
+                            <h3>Frequently bought Together</h3>
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0 fs-6 text-center fs-6">
+                            <div class="general d-flex">
+                                <div class="overflow-hidden">
+                                    <img src="./images/vi3.webp" alt="" width="97px" height="112px"><br>
+                                    <span>Vivo T2 Pro (Dune Gold,256GB) <br> <span class="badge bg-success">4.5</span> (86,779)</span><br> <span><b>$24,999</b> $27,999 <span class="text-success">10% off</span></span>
+                                </div><h1 class="mt-5 text-secondary">+</h1>
+                                <div class="position-relative overflow-hidden">
+                                    <img src="./images/vi3cover.webp" alt="" width="97px" height="112px"> <input type="checkbox" name="" id="one"><br>
+                                    <span>Flipkart SmartBuy Back Cover for vivo T2 Pro 5G <br> <span class="badge bg-success">4</span> (817)<br><b>$295</b></span>
+                                </div><h1 class="mt-5 text-secondary">+</h1>
+                                <div class="position-relative overflow-hidden">
+                                    <img src="./images/vi3glass.webp" alt="" width="97px" height="112px"> <input type="checkbox" id="two"><br>
+                                    <span>LIKEDESIGN Tempered Glass Guard for Vivo T2 Pro 5G, Vivo T2 Pro <br><span class="badge bg-success">4.2</span> (70) <br> <b>$499</b></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-acc-add d-flex fs-6 justify-content-around">
+                                <div class="addition d-flex justify-content-between w-50">
+                                    <!-- <div>
+                                        <span class="text-secondary">1 Item</span><br>
+                                        <b>$24,999</b>
+                                    </div><h3>+</h3>
+                                    <div>
+                                        <span class="text-secondary"><span id="two">2</span> Add ons</span><br>
+                                        <b>$794</b>
+                                    </div><h3>=</h3>
+                                    <div>
+                                        <span class="text-secondary">Total</span><br>
+                                        <b>$25,793</b>
+                                    </div> -->
+                                </div>
+                                <div class="add-to-cart w-50">
+                                    <!-- <button class="bg-warning text-white">Add <span></span> items To Cart</button> -->
+                                </div>
+                            </div>
+                          </blockquote>
+                        </div>
+                    </div>
+                    <div class="card mb-ratings mt-4 overflow-hidden">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h3 class="w-50">Ratings & Reviews</h3>
+                            <button class="d-inline-block w-50">Rate Product</button>
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0 fs-6 text-center fs-6">
+                            <div class="general d-flex justify-content-between">
+                               <div class="rate-cont w-50 pt-3">
+                                    <h3>4.5</h3>
+                                    <span class="text-secondary">
+                                        86,779 Ratings &
+                                        7,636 Reviews
+                                    </span>
+                               </div>
+                               <div class="rate-circle d-flex justify-content-between align-items-center w-50">
+                                    <div class="rating-circle">
+                                        <b>4.3</b><br>
+                                        <span>Camera</span>
+                                    </div>
+                                    <div class="rating-circle">
+                                        <b>4.1</b><br>
+                                        <span>Battery</span>
+                                    </div>
+                                    <div class="rating-circle">
+                                        <b>4.6</b><br>
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="rating-circle">
+                                        <b>4.6</b><br>
+                                        <span>Display</span>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="mb-tp-photo mt-5 w-100 d-flex justify-content-between">
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/tsaree.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/bagTrolley.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/bed.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/batman.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/bottle.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/tsaree.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/wllpaper.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                                <div class="img-boxes border">
+                                    <a href=""><img src="./images/camera.jpeg" height="100%" width="100%" alt=""></a>
+                                </div>
+                            </div>
+                            <hr>
+                          </blockquote>
+                          <div class="tp1-review mt-3">
+                            <span class="badge bg-success">5 <i class="fa-solid fa-star"></i></span>&nbsp;&nbsp;&nbsp;
+                            <span><b>Simply Awesome</b></span><br>
+                            <span class="d-inline-block mt-2">If you using 5000 mah battery smartphone before so some time you feel battery is small but with 66 wat fast charging its absolute fine other wise it is Totally Beast.
+                                Mic Drop.</span>
+                            <div class="tp1-review-img d-flex mt-3 justify-content-between w-50">
+                                <div class="img-boxes"><img src="./images/bagTrolley.jpeg" alt="" height="100%" width="100%"></div>
+                                <div class="img-boxes"><img src="./images/saree.jpeg" alt="" height="100%" width="100%"></div>
+                                <div class="img-boxes"><img src="./images/bottle.jpeg" alt="" height="100%" width="100%"></div>
+                            </div>
+                          </div><hr>
+                          <div class="tp1-review">
+                            <span class="badge bg-success">4 <i class="fa-solid fa-star"></i></span>
+                            <span><b>Good Choice</b></span>&nbsp;&nbsp;&nbsp;<br>
+                            <span class="d-inline-block mt-3">All good at the price ..but need one ultra wide camera</span>
+                            <div class="tp1-review-img d-flex mt-3 justify-content-between w-50">
+                                <div class="img-boxes"><img src="./images/saree.jpeg" alt="" height="100%" width="100%"></div>
+                                <div class="img-boxes"><img src="./images/bagTrolley.jpeg" alt="" height="100%" width="100%"></div>
+                                <div class="img-boxes"><img src="./images/bottle.jpeg" alt="" height="100%" width="100%"></div>
+                            </div>
+                            <span>Flipkart Customer Certified Buyer, Kamrup District 6 months ago</span>
+                          </div><hr>
+                          <div class="tp1-review mt-3">
+                            <span class="badge bg-success">5 <i class="fa-solid fa-star"></i></span>&nbsp;&nbsp;&nbsp;
+                            <span><b>Simply Awesome</b></span><br>
+                            <span class="d-inline-block mt-2">Over all good phone 📱🔥, go through it</span>
+                            <div class="tp1-review-img d-flex mt-3 justify-content-around w-50">
+                                <div class="img-boxes"><img src="./images/saree.jpeg" alt="" height="100%" width="100%"></div>
+                                <div class="img-boxes"><img src="./images/bottle.jpeg" alt="" height="100%" width="100%"></div>
+                            </div>
+                          </div><hr>
+                          <a href="" class="fs-5">All 794 Reviews</a>
+                        </div>
+                    </div>
+                    <div class="mt-4 card">
+                        <div class="card-header">
+                            <h4 class="p-2">Question & Answers</h4>
+                        </div>
+                        <div class="card-body">
+                            <blockquote>
+                                <div class="general">
+                                    <h5>Q: What is the Fingerprint recongnition of T2 pro 5G?</h5>
+                                    <span><b>A:</b>T2 Pro 5G adopts an optical In-screen fingerprint scanner. You can unlock the screen and access encrypted applications by lightly pressing the screen with your finger.</span>
+                                    <div class="review-likes d-flex justify-content-between mt-4 align-items-center">
+                                        <span class="fs-6 text-secondary">Clostail <br />
+                                        <span><i class="fa-solid fa-user"></i> Flipkart Seller</span></span>
+                                        <div class="likes w-25 d-flex justify-content-between">
+                                            <span><i class="fa-regular fa-thumbs-up"></i> 1751</span>
+                                            <span><i class="fa-regular fa-thumbs-down"></i> 653</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h5><b>Q:</b>What is the screen refresh rate of T2 Pro 5G?</h5>
+                                    <span><b>A:</b>T2 Pro 5G comes with a display that supports a refresh rate of up to 120Hz. Settings, Display and brightness, Screen refresh rate to enable Smart switch, 60Hz and 120Hz</span>
+                                    <div class="review-likes d-flex justify-content-between mt-4 align-items-center">
+                                        <span class="fs-6 text-secondary">Clostail <br />
+                                        <span><i class="fa-solid fa-user"></i> Flipkart Seller</span></span>
+                                        <div class="likes w-25 d-flex justify-content-between">
+                                            <span><i class="fa-regular fa-thumbs-up"></i> 1751</span>
+                                            <span><i class="fa-regular fa-thumbs-down"></i> 653</span>
+                                        </div>
+                                    </div><hr>
+                                    <h5><b>Q:</b>Does T2 Pro 5G support Always On Display?</h5>
+                                    <span><b>A:</b>T2 Pro 5G supports Always On Display. When the screen is turned off, it can still display the current time, missed calls, SMS notifications and other information</span>
+                                    <div class="review-likes d-flex justify-content-between mt-4 align-items-center">
+                                        <span class="fs-6 text-secondary">Clostail <br />
+                                        <span><i class="fa-solid fa-user"></i> Flipkart Seller</span></span>
+                                        <div class="likes w-25 d-flex justify-content-between">
+                                            <span><i class="fa-regular fa-thumbs-up"></i> 1751</span>
+                                            <span><i class="fa-regular fa-thumbs-down"></i> 653</span>
+                                        </div>
+                                    </div><hr>
+                                    <a href="" class="fs-5">All questions</a>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="secure d-flex justify-content-center align-items-center pt-2">
+                    <span class="text-secondary"><i class="fa-solid fa-shield fs-3"></i> Safe and Secure Payments.Easy returns.100% Authentic products.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-interested mt-4 bg-white overflow-hidden pb-3">
+        <h2 class="p-3">You might be interested in</h2>
+        <div class="interested-boxes">
+            <div class="row p-1">
+                <div class="col-lg-3 border d-flex justify-content-between p-4 col-sm-6">
+                    <div class="interested-img w-25">
+                        <img src="./images/powerbank.webp" alt="" class="h-100 w-100">
+                    </div>
+                    <div class="interested-cont pt-5">
+                        <h3>Power Banks</h3>
+                        <h5 class="text-secondary">Min. 50% Off</h5>
+                        <button type="button" class="btn btn-primary">Show Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 border d-flex justify-content-between p-4 col-sm-6">
+                    <div class="interested-img">
+                        <img src="./images/budsint.webp" alt="" class="h-100 w-100">
+                    </div>
+                    <div class="interested-cont ps-4 pt-5">
+                        <h3>Mobile Skin Stickers</h3>
+                        <h5>Min .50% Off</h5>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 border d-flex justify-content-between p-4 col-sm-6">
+                    <div class="interested-img">
+                        <img src="./images/watch.webp" alt="" class="h-100 w-100">
+                    </div>
+                    <div class="interested-cont ps-4 pt-5">
+                        <h3>Wearable Smart Devices</h3>
+                        <h5>Min. 40% Off</h5>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 border d-flex justify-content-between p-4 col-sm-6">
+                    <div class="interested-img">
+                        <img src="./images/selfiestick.webp" alt="" class="h-100 w-100">
+                    </div>
+                    <div class="interested-cont ps-4 pt-5">
+                        <h3>Selfie Sticks</h3>
+                        <h5>Min. 40% Off</h5>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="realme-ph bg-white text-center mt-4">
+        <h2 class="d-flex align-itmes-center justify-content-between border">Similar Products</h2>
+        <div class="vivo d-flex justify-content-between w-100 flex-sm-wrap">
+            <div class="phone-box">
+                <img src="./images/vi1.webp" alt=""><br>
+                 <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/vi2.webp" alt=""><br>
+                <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/vi3.webp" alt=""><br>
+                <span>Vivo T2 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/vi4.webp" alt=""><br>
+                <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/vi6.webp" alt=""><br>
+                <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="realme-ph bg-white text-center mt-4">
+        <h2 class="d-flex align-itmes-center justify-content-between border">Recently Viewed</h2>
+        <div class="vivo d-flex justify-content-between w-100 flex-sm-wrap">
+            <div class="phone-box">
+                <img src="./images/vi3cover.webp" alt=""><br>
+                 <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/vi3glass.webp" alt=""><br>
+                <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/poco2.webp" alt=""><br>
+                <span>Poco C51 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/ap1.webp" alt=""><br>
+                <span>Apple 11 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+            <div class="phone-box">
+                <img src="./images/vi6.webp" alt=""><br>
+                <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+            </div>
+           
+        </div>
+    </div>
+    <div class="mt-4 mb-stories bg-white p-4">
+        <p><span class="text-secondary">Top Stories :</span> Brand Directory</p>
+        <p><span class="text-secondary">MOST SEARCHED IN MOBILES & ACCESSORIES : </span>IPHONE 5S GOLD 32GB PRICE IN INDIAIPHONE 6 128GBIPHONE 6S 64GBHONOR 6 PRICEHTC 626GCANVAS NITRO A311MICROSOFT MOBILE 535DATA WIND MOBILEHTC MOBILE PHONEALL NOKIA LUMIA PRICE LISTSUMSUNG MOBILESNOKIA ASHA 503LUMIA 730 PRICE IN INDIAREDMI NOTE 4G DUAL SIMSAMSUNG GALAXY FAMESAMSUNG GALAXY J2S4 MINI PRICESONY BLUETOOTH SPEAKERSSONY XPERIA Z2 TABLETVIVOCOMIO S1HTC DESIRE EYELENOVO VIBE K5 PLUSGSM CDMA MOBILEMICROMAX MOBILE UNDER 5000 4GSONY MOBILE UNDER 15000SAMSUNG NOTE4
+        </p>
+    </div>
+    <div class="ft-dark bg-dark">
+        <div class="ft-dark-cont d-flex justify-content-between">
+          <div class="cont1 d-flex justify-content-between ">
+            <div class="cont1-1 me-sm-5">
+              <span>ABOUT</span><br>
+              <a href="">Contact Us</a><br>
+              <a href="">About Us</a><br>
+              <a href="">Careers</a><br>
+              <a href="">Flipkart Stories</a><br>
+              <a href="">Press</a><br>
+              <a href="">Corporate</a><br>
+              <a href="">information</a>
+            </div>
+            <div class="cont1-2 me-sm-5">
+              <span>GROUP COMPANIES</span><br>
+              <a href="">Myntra</a><br>
+              <a href="">Flipkart Wholesale</a><br>
+              <a href="">Cleartrip</a><br>
+              <a href="">Shopsy</a><br>
+            </div>
+            <div class="cont1-3 me-sm-5">
+              <span>HELP</span><br>
+              <a href="">Payments</a><br>
+              <a href="">Shipping</a><br>
+              <a href="">Cancellation &<br> Returns</a><br>
+              <a href="">FAQ</a><br>
+              <a href="">Report infrigement</a>
+            </div>
+            <div class="cont1-4 me-sm-5 ms-md-5">
+              <span>CONSUMER POLICY</span><br>
+              <a href="">Cancellation & Returns</a><br>
+              <a href="">Terms of use</a><br>
+              <a href="">Security</a><br>
+              <a href="">Privacy</a><br>
+              <a href="">Sitemap</a><br>
+              <a href="">Grievance Redressal</a><br>
+              <a href="">EPR Complliance</a>
+            </div>
+          </div>
+          <div class="cont2 d-flex justify-content-between d-sm-none d-lg-flex">
+            <div class="cont2-1">
+              <span>Mail Us:</span><br>
+              <p>
+                flipkart internet private limited,<br>
+                Building Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarrbensanhalli Village, <br>
+                Bengaluru, 5610103, Karnataka India <br>
+                <span>Social:</span> <br>
+                <i class="fa-brands fa-instagram fa-1x"></i>
+                <i class="fa-brands fa-twitter fa-1x m-2"></i>
+                <i class="fa-brands fa-youtube fa-1x mr-2"></i>
+              </p>
+            </div>
+            <div class="cont2-2">
+              <span>Registered Office Address:</span><br>
+              <p>
+                flipkart internet private limited,<br>
+                Building Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarrbensanhalli Village, <br>
+                Bengaluru, 5610103, Karnataka India <br>
+                CIN:U51109KA2012PTC066107 <br>
+                Telephone:<a href="" class="primary">044-45514700</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-secondary">
+        <div class="ft-tp-cont d-flex justify-content-around d-sm-none d-lg-flex bg-dark pb-5">
+            <span class="text-white"><i class="fa-solid fa-suitcase text-warning"></i> become a seller</span>
+            <span class="text-white"><i class="fa-regular fa-star text-warning"></i> Advertise</span>
+            <span class="text-white"><i class="fa-solid fa-gift text-warning"></i> Gift Cards</span>
+            <span class="text-white"><i class="fa-solid fa-question text-warning"></i> Help Center</span>
+            <span class="text-white">&copy; 2007-2024 Flipkart.com</span>
+            <span class="text-white"><img src="./images/ft-bg.jpeg" alt=""></span>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            let one=$('#one')
+            let two=$('#two')
+            if(!one.is(':checked')&&!two.is(':checked')){
+                $('.addition').html('<b class="pt-3">Please add at least 1 add-on item to proceed</b>')
+                $('.add-to-cart').html('<button class="d-inline-block p-3 bg-secondary text-white"><i class="fa-solid fa-cart-shopping"></i> Add TO CART</button>')
+            }
+            $('.mb-with-acc').click(()=>{
+                if(one.is(':checked') && two.is(':checked')){
+                    $('.addition').html(`
+                    <div>
+                        <span class="text-secondary">1 Item</span><br>
+                        <b>$24,999</b>
+                    </div><h3>+</h3>
+                    <div>
+                        <span class="text-secondary"><span>2</span> Add ons</span><br>
+                        <b>$794</b>
+                    </div><h3>=</h3>
+                    <div>
+                        <span class="text-secondary">Total</span><br>
+                        <b>$25,793</b>
+                    </div>
+                    `)
+                    $('.add-to-cart').html('<button class="d-inline-block p-3 bg-warning text-white"><i class="fa-solid fa-cart-shopping"></i> Add 3 ITEMS TO CART</button>')
+                }else if(one.is(':checked')){
+                    $('.addition').html(`
+                    <div>
+                        <span class="text-secondary">1 Item</span><br>
+                        <b>$24,999</b>
+                    </div><h3>+</h3>
+                    <div>
+                        <span class="text-secondary"><span>2</span> Add ons</span><br>
+                        <b>$295</b>
+                    </div><h3>=</h3>
+                    <div>
+                        <span class="text-secondary">Total</span><br>
+                        <b>$25,294</b>
+                    </div>
+                    `)
+                    $('.add-to-cart').html('<button class="d-inline-block p-3 bg-warning text-white"><i class="fa-solid fa-cart-shopping"></i> Add 2 ITEMS TO CART</button>')
+                }else if(two.is(':checked')){
+                    $('.addition').html(`
+                    <div>
+                        <span class="text-secondary">1 Item</span><br>
+                        <b>$24,999</b>
+                    </div><h3>+</h3>
+                    <div>
+                        <span class="text-secondary"><span id="two">2</span> Add ons</span><br>
+                        <b>$499</b>
+                    </div><h3>=</h3>
+                    <div>
+                        <span class="text-secondary">Total</span><br>
+                        <b>$25,498</b>
+                    </div>
+                    `)
+                    $('.add-to-cart').html('<button class="d-inline-block p-3 bg-warning text-white"><i class="fa-solid fa-cart-shopping"></i> Add 2 ITEMS TO CART</button>')
+                }
+                else{
+                    $('.addition').html('<b class="pt-3">Please add at least 1 add-on item to proceed</b>')
+                    $('.add-to-cart').html('<button class="d-inline-block p-3 bg-secondary text-white"><i class="fa-solid fa-cart-shopping"></i> Add TO CART</button>')
+                }
+            })
+        })
+    </script>
+    <script>
+        let param=new URLSearchParams(window.location.search)
+        window.addEventListener('load',()=>{
+            document.querySelector('#main-parent-img img').src=param.get('img')
+            document.querySelector('#main-parent-img-title').innerText=param.get('title')+' 5G (Dune Gold, 256 GB)  (8 GB RAM)'
+        })
+        let add_cart={
+            title:param.get('title'),
+            img:param.get('img'),
+            price:param.get('price')
+        }
+        document.addEventListener('click',(e)=>{
+            if(e.target.classList.contains('add-cart')){
+                fetch('https://flipkart-backend-eslu.onrender.com/cart',{
+                    method: 'POST',
+                    headers:{'Content-Type': 'application/json'},
+                    body:JSON.stringify(add_cart)
+                }).then(e=>{
+                    if(e.ok){
+                        alert('Success')
+                    }
+                    else{alert('Failed to add cart')}
+                })
+            }
+        })
+    </script>
+</body>
+</html>

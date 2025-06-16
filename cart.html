@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>cart page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#"><img src="./images/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 w-25">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> Login
+                        </a>
+                        <ul class="dropdown-menu overflow-hidden" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./login.html"><i
+                                        class="fa-regular fa-circle-user text-primary"></i> My Profie</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus text-primary"></i> Flipkart
+                                    Plus Zone</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box text-primary"></i>
+                                    Orders</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart text-primary"></i>
+                                    Wishlists</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift text-primary"></i>
+                                    rewards</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-vr-cardboard text-primary"></i>
+                                    Gift Cards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./cart.html"><i class="bi bi-cart"></i> Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-shop"></i> Become a
+                            Seller</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex justify-content-center">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center">Add To Cart Page</h1>
+    <div class="add-to-cart d-flex flex-wrap justify-content-sm-center">
+
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            fetchData();
+        })
+        function fetchData() {
+            fetch('https://flipkart-backend-eslu.onrender.com/cart').then(e => e.json()).then(e => showData(e))
+        }
+        function showData(data) {
+            let result = data.map(e => card(e.id, e.img, e.title, e.price))
+            document.querySelector('.add-to-cart').innerHTML = result.join('')
+        }
+        function card(id, image, title, price) {
+            let card = `
+            <div class="card text-center mt-5 me-3" style="width: 18rem;">
+                <img src="${image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${title}</h5>
+                  <p class="card-text">$ ${price}</p>
+                  <a href="#" class="btn btn-primary" data-id=${id}>Delete</a>
+                </div>
+              </div>
+            `
+            return card
+        }
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn')) {
+                deltecart(e.target.dataset.id)
+            }
+        })
+        function deltecart(id) {
+            fetch(`https://flipkart-backend-eslu.onrender.com/cart/${id}`, {
+                method: 'DELETE',
+            }).then(e => {
+                if (e.ok) {
+                    alert('deleted successfully')
+                }
+                else {
+                    alert('failed to delete')
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Mobile Page</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <header class="bg-primary position-fixed top-0 w-100">
+        <nav class=" d-flex justify-content-around m-auto align-items-center flex-sm-wrap m-md-0 ">
+            <a href="" class="d-lg-inline-block mb-sm-2 d-md-none"><img src="./images/logo.svg" alt=""></a>
+            <ul class="w-75 d-flex align-items-center justify-content-between list-unstyled flex-sm-column flex-md-row">
+                <input type="text" placeholder="Search for products, brands and more" class='d-inline-block mb-sm-2'>
+                <li class="ms-md-2"><span><a href="" class="bg-white pt-1 pb-1 ps-4 pe-4 text-primary"><b>Login</b></a></span>
+                    <div class="login-info-child position-absolute bg-white">
+                        <div class="lg-top d-flex justify-content-between p-2">
+                          <h5>New Customer ?</h5>
+                          <h5><a href="">Sign Up</a></h5>
+                        </div>
+                        <hr class="m-0">
+                        <div class="p-3">
+                          <span class="d-inline-block mb-2 p-1"><i class="fa-regular fa-circle-user text-primary"></i> <a href="">My Profile</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-solid fa-plus text-primary"></i> <a href="">Flipkart Plus Zone</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-solid fa-box text-primary"></i> <a href="">Orders</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-regular fa-heart text-primary"></i> <a href="">Wishlists</a></span><br>
+                          <span class="d-inline-block mb-2 p-2"><i class="fa-solid fa-gift text-primary"></i> <a href="">rewards</a></span><br>
+                          <span class="p-2 d-inline-block"><i class="fa-solid fa-vr-cardboard text-primary"></i> <a href="">Gift Cards</a></span>
+                        </div>
+                      </div>
+                </li>
+                <li class="d-sm-none d-lg-block"><span><a href=""><b>Become a Seller</b></a></span></li>
+                <li class="d-sm-none d-lg-block"><span><a href=""><b>More <i class="bi bi-chevron-down"></i></b></a></span></li>
+                <li class="d-sm-none d-lg-block"><span><a href="./cart.html"><b><i class="bi bi-cart"></i> Cart</b></a></span></li>
+            </ul>
+        </nav>
+    </header>
+    <ul id="outer" class="list-unstyled d-flex justify-content-around bg-white pt-2 pb-2 tp-nav align-items-center position-absolute w-100 flex-sm-wrap">
+        <li><a href=""><b>Electronics</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>TVs & Appliances</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Men</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Women</b></a><i class="bi bi-chevron-down"></i></li>
+        <li><a href=""><b>Baby & Kids</b></a><i class="bi bi-chevron-down"></i></li>
+        <li class="d-sm-none d-lg-flex"><a href=""><b>Home & Furniture</b></a><i class="bi bi-chevron-down"></i></li>
+        <li class="d-sm-none d-lg-flex"><a href=""><b>Sports,Books & More</b></a><i class="bi bi-chevron-down"></i></li>
+        <li class="d-sm-none d-lg-flex"><a href=""><b>Flights</b></a></li>
+        <li class="d-sm-none d-lg-flex"><a href=""><b>Offer Zone</b></a></li>
+    </ul>
+    <main>
+        <h4 class="pt-sm-2 mt-sm-3">Month End Mobiles Festival April 2024</h4>
+        <div class="content">
+            <p class="m-0"><span>Mobile phones are no more merely a part of our lives. Whether it's to stay connected with friends and family or to keep abreast of important developments around the world, mobiles are no longer for sending a text or making a call. From budget to state-of-the-art smartphones; indigenous names to global big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop notch screens, a high screen to body ratio, AI-powered sensational cameras, high storage capacity, blazing quick processing engines or reflective glass designs, rest assured you won’t have to venture anywhere else for your smartphone&nbsp;</span><span>needs. The&nbsp;information you are reading has been last updated on 23-Apr-24.&nbsp;</span></p>
+            <p><a href="/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4">iPhone 15</a> | <a href="/apple-iphone-15-plus-blue-128-gb/p/itm4022c14383050">iPhone 15 Plus</a> | <a href="/apple-iphone-15-pro-black-titanium-128-gb/p/itm96f61fdd7e604">iPhone 15 Pro</a> | <a href="/apple-iphone-15-pro-max-blue-titanium-256-gb/p/itm4a0093df4a3d7">iPhone 15 Pro Max</a> | <a href="/vivo-x100-asteroid-black-256-gb/p/itm60fe0113c39cb">Vivo x 100</a>&nbsp;| <a href="/oppo-reno-11-5g-wave-green-128-gb/p/itm12beb0da508b1">OPPO Reno 11</a>&nbsp;| <a href="/oppo-reno-11-pro-5g-pearl-white-256-gb/p/itm18c5d66bdfaa4">OPPO Reno 11 pro</a> | <a href="/infinix-smart-8-rainbow-blue-64-gb/p/itmb5696a34ad441">Infinix Smart 8</a>&nbsp;&nbsp;| <a href="/google-pixel-7a-sea-128-gb/p/itmb4d7b100b1a4d">Pixel 7a</a>&nbsp;| <a href="/motorola-edge-40-jet-black-256-gb/p/itmbe5b18bf1f229">Moto Edge 40</a>&nbsp;| <a href="/poco-c55-cool-blue-64-gb/p/itm166c52f5d5dc0">POCO C55</a>&nbsp;| <a href="/samsung-galaxy-s24-5g-amber-yellow-256-gb/p/itmebc700bb8d159">Samsung Galaxy S24 5G</a>&nbsp;| <a href="/realme-12-5g-navigator-beige-128-gb/p/itmaf084e49c78e2">Realme 12+  5G</a>&nbsp;| <a href="/vivo-v30-5g-peacock-green-256-gb/p/itme3a94b78a025f">vivo V30</a></p>
+        </div>
+        <div class="ps-images">   
+            <!-- here we insert image with js -->
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Realme smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="realme d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/realme1.webp" alt=""><br>
+                    <span>Realme C51 (Mint Green 64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(78,833)</span><br> $8,699 <span class="text-secondary line-through"> $10,999</span>   <span class="text-success fs-8">20%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/realme2.webp" alt=""><br>
+                    <span>Realme C53 (Champion Gold 128 gb)<br> <span class="badge bg-success">4.4</span> <span class="text-secondary">(1,18,06)</span><br> $9,499 <span class="text-secondary line-through"> $13,999</span>  <span class="text-success fs-8">32%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/realme3.webp" alt=""><br>
+                    <span>Realme C55 (Rainforest,64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(18,109)</span><br> $8,999 <span class="text-secondary line-through"> $13,999</span>   <span class="text-success fs-8">35%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/realme4.webp" alt=""><br>
+                    <span>Realme 12 5G (Twilight purple,128 gb)<br> <span class="badge bg-success">4.4</span> <span class="text-secondary">(4,269)</span><br> $16,999 <span class="text-secondary line-through"> $19,999</span>   <span class="text-success fs-8">15%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/realme5.webp" alt=""><br>
+                    <span>Realme C51 (Carbon black 64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(78,833)</span><br> $8,699 <span class="text-secondary line-through"> $10,999</span>   <span class="text-success fs-8">20%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/realme3.webp" alt=""><br>
+                    <span>Realme C53 (Champion Gold, 128 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(21,092)</span><br> $8,999 <span class="text-secondary line-through"> $11,999</span>   <span class="text-success fs-8">25%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Poco smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="poco d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/poco1.webp" alt=""><br>
+                    <span>Poco M6 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/poco2.webp" alt=""><br>
+                    <span>Poco M6 5G - (Polaris Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(17,653)</span><br> $8,599 <span class="text-secondary line-through"> $12,999</span>   <span class="text-success fs-8">33%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/poco3.webp" alt=""><br>
+                    <span>Realme C61 (Ethereal Blue 64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(713)</span><br> $6,999 <span class="text-secondary line-through"> $10,999</span>   <span class="text-success fs-8">22%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/poco4.webp" alt=""><br>
+                    <span>Poco M6 5G (Mint Green 64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(78,833)</span><br> $8,699 <span class="text-secondary line-through"> $10,999</span>   <span class="text-success fs-8">20%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/poco5.webp" alt=""><br>
+                    <span>Poco x6 5G (Mint Green 64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(78,833)</span><br> $8,699 <span class="text-secondary line-through"> $10,999</span>   <span class="text-success fs-8">20%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/poco6.webp" alt=""><br>
+                    <span>Poco M6 5G (Mint Green 64 gb)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(78,833)</span><br> $8,699 <span class="text-secondary line-through"> $10,999</span>   <span class="text-success fs-8">20%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Snmsung smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="snmsung d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/sn1.webp" alt=""><br>
+                    <span>Snmsung Galaxy F54 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/sn2.webp" alt=""><br>
+                    <span>Snmsung Galaxy F54 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/sn3.webp" alt=""><br>
+                    <span>Snmsung Galaxy F14 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/sn4.webp" alt=""><br>
+                    <span>Snmsung Galaxy F04 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/sn5.webp" alt=""><br>
+                    <span>Snmsung Galaxy F15 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/sn6.webp" alt=""><br>
+                    <span>Snmsung Galaxy F15 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Vivo smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="vivo d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/vi1.webp" alt=""><br>
+                     <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/vi2.webp" alt=""><br>
+                    <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <a href="./mbAbout.html"><img src="./images/vi3.webp" alt=""></a><br>
+                    <span>Vivo T2 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/vi4.webp" alt=""><br>
+                    <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/vi6.webp" alt=""><br>
+                    <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/vi4.webp" alt=""><br>
+                    <span>Vivo T2x 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Apple smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="apple d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/ap1.webp" alt=""><br>
+                    <span>Apple iPhone 15 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/ap2.webp" alt=""><br>
+                    <span>Apple iPhone 14 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/ap3.webp" alt=""><br>
+                    <span>Apple iPhone 15 (Forest Pink, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/ap4.webp" alt=""><br>
+                    <span>Apple iPhone 15 (Forest Blue, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/ap5.webp" alt=""><br>
+                    <span>Apple iPhone 13 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/ap6.webp" alt=""><br>
+                    <span>Apple iPhone 14 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Motorola smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="motorola d-flex justify-content-between w-100 flex-sm-wrap">
+                <!--<div class="phone-box">
+                    <img src="./images/mo1.webp" alt=""><br>
+                    <span>Motorola Edge 40 Neo (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                    
+                <div class="phone-box">
+                    <img src="./images/mo2.webp" alt=""><br>
+                    <span>Motorola G34 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                    
+                <div class="phone-box">
+                    <img src="./images/mo3.webp" alt=""><br>
+                    <span>Motorola G24 Power (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                    
+                <div class="phone-box">
+                    <img src="./images/mo4.webp" alt=""><br>
+                    <span>Motorola G24 Power (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                    
+                <div class="phone-box">
+                    <img src="./images/mo5.webp" alt=""><br>
+                    <span>Motorola G84 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                    
+                <div class="phone-box">
+                    <img src="./images/mo6.webp" alt=""><br>
+                    <span>Motorola g14 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+                    
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Redmi smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="redmi d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/mi1.webp" alt=""><br>
+                    <span>Redmi 13C (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/mi2.webp" alt=""><br>
+                    <span>Redmi 12 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/mi5.webp" alt=""><br>
+                    <span>Redmi A2 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/mi4.webp" alt=""><br>
+                    <span>Redmi A3 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/mi5.webp" alt=""><br>
+                    <span>Redmi 13C (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/mi6.webp" alt=""><br>
+                    <span>Redmi A3 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Infinix smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="infinix d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/finix1.webp" alt=""><br>
+                    <span>Infinix Note 40 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/finix2.webp" alt=""><br>
+                    <span>Infinix HOT 40i (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/finix3.webp" alt=""><br>
+                    <span>Infinix Smart 8HD (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/finix5.webp" alt=""><br>
+                    <span>Infinix Smart 8HD (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/finix6.webp" alt=""><br>
+                    <span>Infinix Smart 8HD (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/finix5.webp" alt=""><br>
+                    <span>Infinix 8HD (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Google smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="google d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/go1.webp" alt=""><br>
+                    <span>Google Pixel 7a (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/go2.webp" alt="">
+                    <span>Google Pixel 7a (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/go1.webp" alt=""><br>
+                    <span>Google Pixel 7 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/go2.webp" alt=""><br>
+                    <span>Google Pixel 8 (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/go1.webp" alt=""><br>
+                    <span>Google Pixel 7 Pro (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/go6.webp" alt=""><br>
+                    <span>Google Pixel 7a (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        <div class="realme-ph bg-white text-center">
+            <h2 class="d-flex align-itmes-center justify-content-between">Oppo smartphones <button type="button" class="btn btn-primary">View More</button></h2>
+            <div class="oppo d-flex justify-content-between w-100 flex-sm-wrap">
+                <!-- <div class="phone-box">
+                    <img src="./images/oppo1.webp" alt=""><br>
+                    <span>OPPO Reno11 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/oppo5.webp" alt=""><br>
+                    <span>OPPO Reno11 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/oppo4.webp" alt=""><br>
+                    <span>OPPO F21 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/oppo5.webp" alt=""><br>
+                    <span>OPPO F25 Pro 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/oppo6.webp" alt=""><br>
+                    <span>OPPO Reno10 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div>
+                <div class="phone-box">
+                    <img src="./images/oppo1.webp" alt=""><br>
+                    <span>OPPO A17K 5G (Forest Green, 128 GB)<br> <span class="badge bg-success">4.3</span> <span class="text-secondary">(64,358)</span><br> $9,999 <span class="text-secondary line-through"> $15,999</span>   <span class="text-success fs-8">37%off</span></span>
+                </div> -->
+            </div>
+        </div>
+        
+    </main>
+    <footer class="mt-5 lg-ft bg-white pb-3">
+        <h2 class="fs-6 pt-4">Mobiles Phones-Buy Mobiles Phones online at best prices in india</h2>
+        <div class="lg-ft-content">
+            <span class="text-secondary">
+                Mobile phone, also called a cell phone owing to it using a cellular network architecture, have seen a tremendous growth in terms of technology and size over the years. On Flipkart, we have a diverse collection of iOS and Android mobiles ranging from basic mobiles, low-range and mid-range phones to very high-end smartphones that
+            </span><br>
+            <span class="d-inline-block mt-1">
+                <a href="">Realme 11 5G</a><a href="">Realme 11X 5G</a><a href="">Relame 11 Pro</a><a href="">Poco M6 Pro</a><a href="">Vivo T2 Pro 5G</a><a href="">Google Pixel 8 Pro</a><a href="">Poco X3 Pro</a><a href="">Redmi 12</a><a href="">Vivo T2x 5G</a><a href="">Snmsung Galaxy F14</a><a href="">Vivo T2 5G</a><a href="">Infinix HOT 30i</a>
+            </span><br>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">IPhone 15</h2>
+                Are you looking to buy a new phone from Apple? If yes, then you can have a look at the iPhone 15. Made of aerospace-grade aluminium and infused glass, the design of this phone has a robust finish, ensuring you can use the device securely. Featuring 128 GB ROM, the device can offer faster response and processing capacity, ensuring you have a smooth and hassle-free digital experience. The iPhone is also well-equipped with a 15.49 cm (6.1) Super Retina XDR display that can ensure an immersive experience when watching a film or series or participating in an online gaming session. If you are interested in photography, this phone can also become your go-to choice. With a 48 MP main camera, the device allows you to click crystal-clear pictures with absolute ease. The device also has a 12 MP front camera that makes sure that you can click stunning selfies that can capture your special moments. This device is also compatible with USB-C, ensuring that phone charging becomes a breeze. So, read the product descriptions of the iPhone 15 carefully and confirm your order to get hassle-free delivery. 
+            </span><br>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">IPhone 15 Plus</h2>
+                Get the iPhone 15 Plus and access a realm of advanced features designed to elevate your smartphone experience. Thе dеvicе boasts good sound quality with built-in stereo speakers and sound еnhancеmеnts. This feature еnsures an immеrsivе audio еxpеriеncе whеthеr you'rе enjoying music, vidеos, or making calls. Thе statе-of-thе-art Facе ID fеaturе provides seamless and sеcurе authentication, adding a layеr of protection to your dеvicе. This feature ensures the privacy of your data. Beyond these features, this iPhone is equipped with a Barometer, offering atmospheric pressure data for weather tracking and elevation-related activities. Moreover, the inclusion of a high dynamic range (HDR) gyro and high-g accelerometer enhances the device's motion-sensing capabilities, providing a more responsive performance. This feature particularly helps in gaming and augmented reality applications. Additionally, the proximity sensor and dual ambient light sensors contribute to a smart and intuitive user experience by adjusting screen brightness and ensuring efficient power usage based on the surrounding environment. Browse through the several variants of iPhone 15 Plus with different colours and storage options and order the one suitable for you. You can easily buy the iPhone online from the comfort of your home and get it delivered to your preferred address. 
+            </span><br>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">IPhone 15 Pro Max</h2>
+                Enjoy longevity and powerful performance with iPhone 15 Pro Max models. This device is made of titanium, ensuring lightweight and longevity. If you are a heavy user, this Pro Max model can be your go-to choice. It comes with an A17 Pro chip that could enable features like improved camera performance and responsive user experiences. Out of various shade options, you can select the blue titanium colour to enjoy a classy look. The versatility of this shade makes it ideal for men and women of all ages. Apart from this hue, you can also find the black model that offers a sophisticated look. The dark colour makes the phone ideal for different settings, be it a professional meeting or partying with friends. The dark bezels can help reduce reflections from the screen, enhancing visibility and usability, especially in bright lighting conditions. One of the main benefits of this phone is its immersive audio experience with enhanced sound quality. Whether listening to music or making video calls, you can enjoy dynamic sound with better detail. Buy this model to enjoy both functionality and aesthetic appeal. Add the iPhone 15 Pro Max in shades of your choice to your shopping cart and make a secure payment to get doorstep delivery. 
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Nothing Phone 2a</h2>
+                Unlock thе door to an extraordinary gaming еxpеriеncе with Nothing 2a. Thе phonе еnsurеs that еvеn in thе most challеnging conditions, contrast details arе capturеd with prеcision. Its lag-free performance makеs it idеal for high-action еvеnts like sports games or concеrts, whеrе you don't want to miss a single momеnt. Additionally, the Glyph Interface еnhancеs your gaming еxpеriеncе by providing unparalleled clarity and definition. You can expеriеncе enhanced immersion in the gaming world with vivid display clarity that brings еvеry pixel to lifе. Thе advancеd cooling systеm ensures prolonged gaming sessions without concеrns of ovеrhеating. Additionally, its versatility extends to other activitiеs whеrе visual prеcision is paramount. Whеthеr you arе watching moviеs, еditing photos, or strеaming your favouritе contеnt, this phonе dеlivеrs stunning imagе quality еvеry timе. Thе phonе is equipped with an array of sensors to enhance your overall usеr еxpеriеncе. From thе in-display fingerprint sensor for convenient and sеcurе unlocking to thе accеlеromеtеr, еlеctronic compass, gyroscopе, ambiеnt light sеnsor, proximity sеnsor, and sеnsor corе, this dеvicе has everything you need to stay connеctеd and productivе throughout thе day. Check out Nothing 2a today and еlеvatе your gaming еxpеriеncе to new heights. 
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Redmi Note 13 Pro Plus</h2>
+                Redefine your photography skills with the help of Redmi Note 13 Pro+. With the help of the stunning camera settings of the device, you can capture the special moments of your life with absolute ease. The phone is well-equipped with a rear camera setting of 200 MP (OIS) + 8 MP + 2 MP that allows you to take crystal clear photos without any additional hassle. Features like depth control and long exposure can also help you to get sharp clicks with your smartphone. Moreover, if you are someone who enjoys taking self-portraits, this device can also come in handy for you. With its 16 MP front camera, you can click remarkable selfies. In addition to photography, the device might have added appeal to you if you also enjoy videography. The camera settings of the phone allow video recording up to 4 K resolution, giving them an unmatched cinematic feel. You also do not have to worry about running out of phone memory when it comes to storing these videos and photos taken. The mobile has a storage capacity of 256 GB, ensuring that your multimedia files can be saved easily. So, place your order for the Redmi Note 13 Pro+ online and enjoy the benefits of getting it delivered right to your doorstep. 
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Snmsung Galaxy Z Flip 5</h2>
+                Explore the Samsung Galaxy Z Flip 5 online, which introducеs you to a rеmarkablе dеvicе packed with standout features. Imaginе having a powerful phonе with 8 GB RAM and a suitable storagе spacе, еnsuring smooth pеrformancе and amplе room for all your apps, photos, and vidеos. It's likе having a pockеt-sizеd powеrhousе rеady for anything. Thе phonе boasts a slееk 17.02 cm (6.7) display, providing a vibrant and immеrsivе visual еxpеriеncе. Enjoy your favouritе moviеs, gamеs, or social mеdia on a scrееn that's both compact and еxpansivе and can fit right in your pockеt. Capturе your momеnts in stunning dеtail with thе 12 MP dual rеar camеras for beautiful selfies. Whether it's a landscapе or a mеmorablе selfie, thе Samsung Z Flip 5's camera systеm еnsurеs your photos look imprеssivе. With a rеliablе 3700 mAh battеry, thе phonе kееps up with your busy day, еnsuring you stay connеctеd and еntеrtainеd without worrying about running out of powеr. Powеrеd by thе Snapdragon 8 Gеn 2 Procеssor, thе Galaxy Z Flip 5 еnsurеs spееdy pеrformancе, making multitasking and navigating through apps a seamless еxpеriеncе. So, buy the Samsung Galaxy Z Flip 5 online and get it delivered to your doorstep with just a few clicks and swipes.
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Snmsung Galaxy Z Fold 5</h2>
+                Get ready to unfold a new chapter in smartphone technology with the Samsung Galaxy Z Fold 5. Crafted with precision, the device exudes sophistication with its sleek design and premium materials. Whether you're watching your favourite movies, multitasking with multiple apps, or diving into the latest mobile games, the foldable display effortlessly adapts to your needs. The immersive visuals are complemented by a buttery-smooth 120 Hz refresh rate, ensuring every swipe and scroll is as fluid as it is mesmerising. Furthermore, the device boasts a robust yet lightweight frame that effortlessly folds and unfolds, making it a suitable companion for those who demand versatility without compromising on style. The Gorilla Glass Victus on the cover and display ensures durability, while the sleek aluminium frame adds a touch of sophistication. The Multi-active Window feature allows you to run multiple apps simultaneously, transforming your device into a powerful productivity tool. Be it working on a presentation, responding to emails, or conducting a video call, the Samsung Z Fold 5 adapts to your workflow, making every task a breeze. So shop online now and unfold a world of infinite possibilities to elevate your mobile experience like never before!
+ 
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">IPhone 14</h2>
+                Enjoy the comfort of a streamlined user interface and faster connectivity with the iPhone 14. Equipped with a hexacore processor, this device can run smoothly without frequent glitches and lagging. Therefore, whether you are using the device for work-related purposes or leisurely activities, it can come in handy for you. The iPhone 14 offers 5G connectivity support, ensuring that you can have faster internet. This way, whether you are attending a virtual conference or playing an online game, you can have an interruption-free experience. With an adequate contrast ratio and brightness, the Super Retina XDR display of the device also ensures you have an immersive experience when you are consuming multimedia content. Moreover, this iPhone 14 also consists of a 5-core GPU thanks to its A15 bionic chip. Therefore, you can have a seamless experience when multitasking on this device. Offering a 12 MP dual back camera set-up and 4K recording support, this iPhone model can be an ideal choice for photography and videography enthusiasts too. You can know more about crucial details like the iPhone 14 price and other features by going through the product description of the device. With a few simple swipes and clicks, you can buy the iPhone 14 online from the comfort of your home.
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Motorola Edge 40</h2>
+                Bring home unbeatable UI and an immersive experience with the Motorola Edge 40 smartphone. Shop for the Motorola Edge 40 online and check out its various features such as its 8 GB of RAM and up to 256 GB of storage space. This is in turn backed by a MediaTek Dimensity 8020 processor that is intelligently designed to be able to handle multiple operations and processing threads simultaneously. This ensures that you can easily switch between apps, play games, stream media, and more without facing significant challenges. The mobile features a 16.64 cm (6.55) Full HD+ display to ensure that you capture and view images on your smartphone with the utmost clarity. The phone features an IP68-rated waterproof design as well as a hermetic seal to protect your phone from dust, water, and other pollutants. To top it all off, this phone features a 50 MP camera along with a 13 MP ultra-wide camera to let you click photos in a fashion of your choice. Additionally, it also features a 32 MP selfie camera to ensure that you don't miss out on any memories during your daily adventures. You can check and compare the Motorola Edge 40’s prices online and have the phone delivered to you in the comfort of your home. 
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Nothing Phone</h2>
+                Upgrade to a seamless mobile user experience with the stunning Nothing Phone (1). Powered by Android 12, this device can come in handy for both work as well as leisure. Equipped with an Octa-core Qualcomm Snapdragon 778G+ processor, this phone allows you to multitask and manage your media with ease. Moreover, you can enjoy online gaming or streaming experiences without any significant latency. The device is also equipped with an intuitive Glyph Interface design that helps you to operate the device with ease and enjoy streamlined interconnectivity features. The 17 cm screen and a full HD+ display are also pivotal in offering you an immersive feeling if you watch a film or a series on this device. Moreover, you do not have to worry about running out of space when you are using this device. You can avail of Nothing Phone online with a substantial 128 GB internal storage capacity. The phone also has 8 GB RAM, so you can rest assured about its optimal output capacity without glitches and lags. With its elegant design and 5G connectivity compatibility, this Nothing Phone (1) can simultaneously cater to your requirements for both style and substance. So, check out Nothing Phone prices, and features, and place your order online without any hesitation.
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Pixel 7a</h2>
+                Make the Google Pixel 7a your first smartphone or your upgrade from your old model. This phone can capture and immortalise your precious moments, provide a calling experience with minimal issues, keep your information secure, and do more. The Tensor G2 processor ensures that these tasks are completed with minimal lag. The Pixel smartphone also makes sure that hours of screen time does not drain your battery quickly. The 4300 mAh battery offers almost 24 hours of battery life, while the extreme battery saver mode can give you nearly three days of battery life. Additionally, you can also quickly charge the battery thanks to Fast Charge when needed. The long battery life helps you click photographs and videos using the 64 MP main camera and 13 MP ultra-wide camera endlessly. You can also click a selfie with the 13 MP front camera, which has a 95-degree wide field of view. Check the Google Pixel 7a price and pick from colours like Charcoal, Sea, and Snow. Shop for the Google Pixel 7a (in) India model, which has a scratch-resistant Corning Gorilla Glass 3 cover, an IP67 rating, and a fingerprint-resistant coating that can keep the aesthetics of the Pixel 7a unharmed. Explore various other features of the smartphone and purchase it to experience the Google interface.
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Oppo Find N2 Flip</h2>
+                Get the Oppo Find N2 Flip mobile phone to bring home a whole range of exciting features. Fitted with a Flexion Hinge the Oppo Find N2 folds in half to let you view calls, notifications, reminders, and more on a 8.28 cm (3.26) screen. When not using the cover screen, this phone uses its 17.27 cm (6.8) Full HD display for visuals. Made using high-grade steel and a polymer, the hinge can be folded around 400,000 times without wearing out. The phone is powered by a 4300 mAh battery that offers backup for up to 20 hours of video playback, 6 hours of video calling, and around 16 hours of internet browsing. This powerful battery can be charged to up to 50% in just 23 minutes thanks to the 44 W SUPERVOOC Flash Charge. All of these features are tied together by the MediaTek Dimensity 9000+ processor that is more than able
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Snmsung Galaxy S23 Ultra</h2>
+                The Samsung Galaxy S23 Ultra is another feather in Samsung's illustrious cap of high-performance smartphones. The phone is loaded with various features to offer its users a highly enjoyable and memorable experience. The S23 Ultra is powered by a Snapdragon 8 Gen 2 mobile processor to ensure optimized and seamless performance when undertaking even the most challenging processes. It is programmed to be able to handle multiple operational threads without causing the battery to drain quickly. This phone comes with a Dynamic AMOLED 2X screen with a 120 Hz refresh rate to ensure that you see all the details clearly irrespective of whether you have the brightness at full or dimmed. The phone uses One UI which lets you customize every detail of the phone—be it the lockscreen, themes, or widgets with ease. Additionally, the phone is powered by a 5000 mAh battery to enable you to watch movies, play games, and do much more all through the day. To avoid making a rushed decision, you can check and compare the Samsung Galaxy S23 Ultra’s prices and reviews online before ordering.  
+            </span>
+            <span class="d-inline-block mt-3 text-secondary">
+                <h2 class="fs-6">Poco X3 Pro</h2>
+                With the POCO X3 Pro smartphone, you can experience a fast, swift, and sustained phone performance. The smartphone has a powerful quad-camera setup, using which you can click memorable photographs, capturing the gist of your special occasions. The phone offers an efficient 48 MP primary camera, combined with a depth sensor, macro lens, and an ultra wide-angle lens to deliver stunning pictures and cinematic videos.employ state-of-the art technology. These mobiles are priced anywhere between Rs 500 to Rs 100,000. Top mobile brands like Samsung, Oppo, Vivo, Apple and many more are available here under discounts. Apart with these, the latest trend in network connectivity, the 4G network is also made accessible in 4G mobiles from top brands.
+
+            </span>
+        </div>
+        <div class="mb-tables mt-3">
+            <div class="t1">
+                <h2 class="fs-6 text-md-center text-sm-center">Mobile Brands:</h2>
+                <table border="1px" class="m-md-auto m-sm-auto">
+                    <tr>
+                        <td><a href="">Asus Mobile</a></td>
+                        <td><a href="">Realme Mobile</a></td>
+                        <td><a href="">iPhone</a></td>
+                        <td><a href="">Lenovo Mobile</a></td>
+                        <td><a href="">Google Pixel Mobile</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Poco Mobile</a></td>
+                        <td><a href="">HTC Mobile</a></td>
+                        <td><a href="">Mi Mobile</a></td>
+                        <td><a href="">Motorola Mobile</a></td>
+                        <td><a href="">LG Mobile</a></td> 
+                    </tr>
+                    <tr>
+                        <td><a href="">Nokia Mobile</a></td>
+                        <td><a href="">iqoo Mobile</a></td>
+                        <td><a href="">Panasonic Mobile</a></td>
+                        <td><a href="">Snmsung Mobile</a></td>
+                        <td><a href="">Micromax Mobile</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Oneplus Mobile</a></td>
+                        <td><a href="">Gionee Mobile</a></td>
+                        <td><a href="">Vivo Mobile</a></td>
+                        <td><a href="">Nothing Mobile</a></td>
+                        <td><a href="">Oppo Mobile</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="t2 mt-3">
+                <h2 class="fs-6 text-md-center text-sm-center">Mobiles By Screen Sizes:</h2>
+                <table border="1px" class="m-md-auto m-sm-auto">
+                    <tr>
+                        <td><a href="">4 inches Mobiles</a></td>
+                        <td><a href="">5.5 inches Mobiles</a></td>
+                        <td><a href="">4.5 inches Mobiles</a></td>
+                        <td><a href="">5.2 inches Mobiles</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">3.5 inches Mobiles</a></td>
+                        <td><a href="">6 inches Mobiles</a></td>
+                        <td><a href="">3 inch Mobiles</a></td>
+                        <td><a href="">5 inches Mobiles</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="t3 mt-3">
+                <h2 class="fs-6 text-sm-center text-md-center">Mobiles By RAM:</h2>
+                <table border="1px" class="m-md-auto m-sm-auto">
+                    <tr>
+                        <td><a href="">3 GB RAM Mobiles</a></td>
+                        <td><a href="">2 GB RAM Mobiles</a></td>
+                        <td><a href="">4 GB RAM Mobiles</a></td>
+                        <td><a href="">1 GB Mobiles</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">6 GB RAM Mobiles</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="t4 mt-3">
+                <h2 class="fs-6 text-sm-center text-md-center">Apple Iphones</h2>
+                <table border="1px" class="m-md-auto m-sm-auto">
+                    <tr>
+                        <td><a href="">iPhone 15</a></td>
+                        <td><a href="">iPhone 15 Plus</a></td>
+                        <td><a href="">iPhone 15 Pro</a></td>
+                        <td><a href="">iPhone 15 Pro Max</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">iPhone 14 </a></td>
+                        <td><a href="">iPhone 14 Plus</a></td>
+                        <td><a href="">iPhone 14 Pro</a></td>
+                        <td><a href="">iPhone 14 Pro Max</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">iPhone 13 </a></td>
+                        <td><a href="">iPhone 13 Plus</a></td>
+                        <td><a href="">iPhone 13 Pro</a></td>
+                        <td><a href="">iPhone 13 Pro Max</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">iPhone 12</a></td>
+                        <td><a href="">iPhone 12 Plus</a></td>
+                        <td><a href="">iPhone 12 Pro</a></td>
+                        <td><a href="">iPhone 12 Pro Max</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="faq mt-5">
+                <h2 class="text-secondary fs-6">FAQ</h2>
+                <span class="d-inline-block text-secondary fs-6 mt-3">
+                    Q. Which are the best mobile phone brands available in India?<br>
+                    A. Samsung, iPhone, Redmi, Realme, and POCO are some of the best mobile phone brands available in the Indian market.
+                </span><br>
+                <span class="d-inline-block text-secondary fs-6 mt-4">
+                    Q. What is the minimum RAM capacity needed for a smartphone?<br>
+                    A. 4 GB of RAM is considered the bare minimum for a smartphone
+                </span><br>
+                <span class="d-inline-block text-secondary fs-6 mt-4">
+                    Q.What influences the speed of a mobile phone?<br>
+                    A. The number of processor cores and the higher clock speed of the processor cores can influence the speed of the mobile phone.
+                </span><br>
+                <span class="d-inline-block text-secondary fs-6 mt-4">
+                    Q. What are the best feature phones available in India?<br>
+                    A. Nokia 6310, Nokia 105 SS 2021, Samsung Guru Music 2, and Samsung Metro 350 are some of the best feature phones available in India.
+                </span><br>
+                <span class="text-secondary d-inline-block fs-6 mt-4">
+                    Q  How much storage capacity can I expect in a mobile phone?<br>
+                        A. Most smartphones come with an inbuilt storage capacity of 32 GB, 64 GB, and 128 GB. A few high-end models also feature 256 GB or 512 GB of storage capacity.
+                </span>
+            </div>
+            <div class="que-ans mt-5">
+                <h2 class="fs-5"><b>Questions and Answers</b></h2>
+                <hr>
+                <span>
+                    Q.What are the different display options available on smartphones?<br>
+                    A.Capacitive touchscreen LCD, IPS-LCD, AMOLED, OLED, and Super AMOLED are the different display types available in smart mobile phones.
+                </span><br><hr>
+                <span class="d-inline-block">
+                    Q.What are the best display resolutions available on smartphones? <br>
+                    A.You can find smartphones with HD, FHD, and HD+ resolutions. The higher the display resolution, the sharper the displayed content will appear on the screen.
+                </span><hr>
+                <span>
+                    Q.What are the best quad-camera mobile phones available in India?<br>
+                    A.Redmi Note 10S, Samsung Galaxy M32, POCO X3 Pro, vivo X70 Pro, and realme 8 are some of the best mobile phones with a quad-camera setup.
+                </span><hr>
+                <span>
+                    Q.What is the benefit of fast charging in mobile phones?<br>
+                    A.Fast charging enables the mobile phone to charge faster than the current charging standard, and it can significantly reduce the time you would typically require to charge your phone.
+                </span>
+                <span>
+                    Q.What are some important features to consider when buying a mobile phone? <br>
+                    A.Before purchasing a mobile phone, you must ensure that you consider features and specifications such as the battery capacity, screen size, display type, camera quality, operating system, and SIM compatibility to ensure you purchase a variant that meets all your requirements.
+                </span>
+                <hr>
+                <span>
+                    Q.What are the latest mobile models in 2024?<br>
+                    A.
+                    iPhone 15, iPhone 15 Plus, iPhone 15 Pro, iPhone 15 Pro Max, Redmi Note 13 pro, Redmi Note 13 pro Plus, Vivo x 100, Vivo X 100 pro, Poco X6 pro, Poco X6, Moto G34, Oppo Reno 11, infinix Smart 8, Oppo Reno 11 pro, Samsung Galaxy S24 5G, Samsung Galaxy S24+ 5G, Samsung Galaxy S24 Ultra, Nothing 2a
+                </span>
+            </div>
+        </div>
+    </footer>
+    <div class="ft-dark bg-dark">
+        <div class="ft-dark-cont d-flex justify-content-between">
+          <div class="cont1 d-flex justify-content-between ">
+            <div class="cont1-1 me-md-5 me-sm-5">
+              <span>ABOUT</span><br>
+              <a href="">Contact Us</a><br>
+              <a href="">About Us</a><br>
+              <a href="">Careers</a><br>
+              <a href="">Flipkart Stories</a><br>
+              <a href="">Press</a><br>
+              <a href="">Corporate</a><br>
+              <a href="">information</a>
+            </div>
+            <div class="cont1-2 me-md-5 me-sm-5">
+              <span>GROUP COMPANIES</span><br>
+              <a href="">Myntra</a><br>
+              <a href="">Flipkart Wholesale</a><br>
+              <a href="">Cleartrip</a><br>
+              <a href="">Shopsy</a><br>
+            </div>
+            <div class="cont1-3 me-md-5 me-sm-5">
+              <span>HELP</span><br>
+              <a href="">Payments</a><br>
+              <a href="">Shipping</a><br>
+              <a href="">Cancellation &<br> Returns</a><br>
+              <a href="">FAQ</a><br>
+              <a href="">Report infrigement</a>
+            </div>
+            <div class="cont1-4 ms-md-5">
+              <span>CONSUMER POLICY</span><br>
+              <a href="">Cancellation & Returns</a><br>
+              <a href="">Terms of use</a><br>
+              <a href="">Security</a><br>
+              <a href="">Privacy</a><br>
+              <a href="">Sitemap</a><br>
+              <a href="">Grievance Redressal</a><br>
+              <a href="">EPR Complliance</a>
+            </div>
+          </div>
+          <div class="cont2 d-flex justify-content-between d-sm-none d-lg-flex">
+            <div class="cont2-1">
+              <span>Mail Us:</span><br>
+              <p>
+                flipkart internet private limited,<br>
+                Building Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarrbensanhalli Village, <br>
+                Bengaluru, 5610103, Karnataka India <br>
+                <span>Social:</span> <br>
+                <i class="fa-brands fa-instagram fa-1x"></i>
+                <i class="fa-brands fa-twitter fa-1x m-2"></i>
+                <i class="fa-brands fa-youtube fa-1x mr-2"></i>
+              </p>
+            </div>
+            <div class="cont2-2">
+              <span>Registered Office Address:</span><br>
+              <p>
+                flipkart internet private limited,<br>
+                Building Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarrbensanhalli Village, <br>
+                Bengaluru, 5610103, Karnataka India <br>
+                CIN:U51109KA2012PTC066107 <br>
+                Telephone:<a href="" class="primary">044-45514700</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="text-secondary">
+        <div class="ft-tp-cont d-flex justify-content-around d-sm-none d-lg-flex bg-dark pb-4">
+            <span class="text-white"><i class="fa-solid fa-suitcase text-warning"></i> become a seller</span>
+            <span class="text-white"><i class="fa-regular fa-star text-warning"></i> Advertise</span>
+            <span class="text-white"><i class="fa-solid fa-gift text-warning"></i> Gift Cards</span>
+            <span class="text-white"><i class="fa-solid fa-question text-warning"></i> Help Center</span>
+            <span class="text-white">&copy; 2007-2024 Flipkart.com</span>
+            <span class="text-white"><img src="./images/ft-bg.jpeg" alt=""></span>
+        </div>
+    </div>
+    <script>
+        let realme=document.querySelector('.realme')
+        let poco=document.querySelector('.poco')
+        let vivo=document.querySelector('.vivo')
+        let apple=document.querySelector('.apple')
+        let redmi=document.querySelector('.redmi')
+        let google=document.querySelector('.google')
+        let infinix=document.querySelector('.infinix')
+        let motorola=document.querySelector('.motorola')
+        let oppo=document.querySelector('.oppo')
+        let snmsung=document.querySelector('.snmsung')
+        let imgobj={
+            img1:'./images/mb-ps-1.webp',
+            img2:'./images/mb-ps-3.webp',
+            img3:'./images/mb-ps-4.webp',
+            img4:'./images/mb-ps-5.webp',
+            img5:'./images/mb-ps-6.webp',
+            img6:'./images/mb-ps-7.webp',
+            img7:'./images/mb-ps-8.webp',
+            img8:'./images/mb-ps-9.webp',
+            img9:'./images/mb-ps-10.webp',
+            img10:'./images/mb-ps-11.webp',
+            /*tag1:'',
+            tag2:'',
+            tag3:'',
+            tag4:''*/
+        }
+        let arr=[
+        {
+            img1:'./images/realme1.webp',
+            img2:'./images/realme2.webp',
+            img3:'./images/realme3.webp',
+            img4:'./images/realme4.webp',
+            img5:'./images/realme5.webp',
+            img6:'./images/realme3.webp',
+        },
+        {
+            img1:'./images/poco1.webp',
+            img2:'./images/poco2.webp',
+            img3:'./images/poco3.webp',
+            img4:'./images/poco4.webp',
+            img5:'./images/poco5.webp',
+            img6:'./images/poco6.webp',
+        },
+        {
+            img1:'./images/sn1.webp',
+            img2:'./images/sn2.webp',
+            img3:'./images/sn3.webp',
+            img4:'./images/sn4.webp',
+            img5:'./images/sn5.webp',
+            img6:'./images/sn6.webp',
+        },
+        {
+            img1:'./images/vi1.webp',
+            img2:'./images/vi2.webp',
+            img3:'./images/vi3.webp',
+            img4:'./images/vi4.webp',
+            img5:'./images/vi6.webp',
+            img6:'./images/vi4.webp',
+        },
+        {
+            img1:'./images/ap1.webp',
+            img2:'./images/ap2.webp',
+            img3:'./images/ap3.webp',
+            img4:'./images/ap4.webp',
+            img5:'./images/ap5.webp',
+            img6:'./images/ap6.webp',
+        },
+        {
+            img1:'./images/mo1.webp',
+            img2:'./images/mo2.webp',
+            img3:'./images/mo3.webp',
+            img4:'./images/mo4.webp',
+            img5:'./images/mo5.webp',
+            img6:'./images/mo6.webp',
+        },
+        {
+            img1:'./images/mi1.webp',
+            img2:'./images/mi2.webp',
+            img3:'./images/mi3.webp',
+            img4:'./images/mi4.web',
+            img5:'./images/mi5.webp',
+            img6:'./images/mi6.webp',
+        },
+        {
+            img1:'./images/finix1.webp',
+            img2:'./images/finix2.web',
+            img3:'./images/finix3.webp',
+            img4:'./images/finix5.webp',
+            img5:'./images/finix3.webp',
+            img6:'./images/finix6.webp',
+        },
+        {
+            img1:'./images/go1.webp',
+            img2:'./images/go2.webp',
+            img3:'./images/go3.webp',
+            img4:'./images/go4.webp',
+            img5:'./images/go5.webp',
+            img6:'./images/go6.webp',
+        },
+        {
+            img1:'./images/oppo1.webp',
+            img2:'./images/oppo3.webp',
+            img3:'./images/oppo4.webp',
+            img4:'./images/oppo5.webp',
+            img5:'./images/oppo6.webp',
+            img6:'./images/oppo3.webp',
+        },
+        ]
+        for(let i in imgobj){
+            let img=document.createElement('img')
+            img.setAttribute('src',imgobj[i])
+            let div=document.createElement('div')
+            div.classList.add('posters')
+            div.append(img)
+            document.querySelector('.ps-images').append(div)
+        }
+        function fetchData(){
+            fetch("https://flipkart-backend-eslu.onrender.com/mobiles").then(e=>e.json()).then(e=>insertCard(e))
+        }
+        fetchData();
+        function insertCard(data){
+            let store=data.map((e)=>{card(e.title,e.img,e.price,e.odprice,e.badge,e.like,e.discount)})
+        }
+        function card(title,img,price,odprice,badge,like,discount){
+            let result=`
+            <div class="phone-box">
+                <a href='./mbAbout.html?title=${title}&img=${img}&price=${price}&odprice=${odprice}&badge=${badge}&like=${like}&discount=${discount}' class='text-dark'>
+                <img src=${img} alt=""><br>
+                <span>${title} C51 (Mint Green 64 gb)<br> <span class="badge bg-success">${badge}</span> <span class="text-secondary">(${like})</span><br>${price}<span class="text-secondary line-through">${odprice}</span>   <span class="text-success fs-8">${discount}</span></span>
+                </a>
+            </div>
+            `
+            if(title=='oppo'){
+                oppo.innerHTML+=result
+            }
+            if(title=='iphone'){
+                apple.innerHTML+=result
+            }
+            if(title=='motorola'){
+                motorola.innerHTML+=result
+            }
+            if(title=='poco'){
+                poco.innerHTML+=result
+            }
+            if(title=='snmsung'){
+                snmsung.innerHTML+=result
+            }
+            if(title=='google'){
+                google.innerHTML+=result
+            }
+            if(title=='realme'){
+                realme.innerHTML+=result
+            }
+            if(title=='redmi'){
+                redmi.innerHTML+=result
+            }
+            if(title=='infinix'){
+                infinix.innerHTML+=result
+            }
+            if(title=='vivo'){
+                vivo.innerHTML+=result
+            }
+        }
+    </script>
+    
+</body>
+</html>

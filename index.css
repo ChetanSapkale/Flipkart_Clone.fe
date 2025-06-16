@@ -1,0 +1,241 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-color: #ddd;
+    font-family: sans-serif;
+    user-select: none;
+    text-decoration: none;
+}
+
+/* nav styling */
+.grandParent i {
+    font-size: 20px;
+}
+/* .grandParent nav{
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.grandParent nav input{
+    width: 437.34px;
+    background-color: rgba(135, 207, 235, 0.733);
+    padding:12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+} */
+
+.login-info{
+    width: 30%;
+}
+.login-info-child{
+    border: 2px solid blue;
+    width: 300px;
+    z-index:1000;
+    top: 70px;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+.login-info span:first-child:hover .login-info-child{
+ display:block;
+}
+.login-info-child span a{
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+}
+.showpr{
+    background-color: white;
+}
+.pr1,.pr2,.pr3,.pr4,.pr5,.pr6,.pr7,.pr8,.pr9{
+    padding: 16px;
+    position: relative;
+}
+/* hovers of products */
+:where(.none){
+    display: none;
+}
+.pr3-list1 span:first-child:hover .list3-1-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(2):hover .list3-2-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(3):hover .list3-3-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(4):hover .list3-4-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(5):hover .list3-5-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(6):hover .list3-6-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(7):hover .list3-7-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(8):hover .list3-8-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(9):hover .list3-9-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(10):hover .list3-10-child{
+    display: block;
+}
+.pr3-list1 span:nth-child(11):hover .list3-11-child{
+    display: block;
+}
+.pr3:hover .pr3-list{
+    display: block;
+}
+
+/* hover of products end */
+/* pr 5 styling */
+.pr5-list,.pr4-list,.pr8-list,.pr9-list{
+    position: absolute;
+    left: 0;
+    border: 2px solid red;
+    z-index: 999;
+    width: 200px;
+    background-color: white;
+}
+.list5-1-child,.list5-3-child,.list5-4-child,.list5-5-child,.list5-7-child,.list5-8-child,.list5-9-child,.list5-11-child,.list5-12-child,.list5-13-child,.list3-1-child,.list3-2-child,.list3-3-child,.list3-4-child,.list3-5-child,.list3-6-child,.list3-7-child,.list3-8-child,.list3-9-child,.list3-10-child,.list3-11-child,.pr4-1-child,.pr4-3-child,.pr4-4-child,.pr4-5-child,.pr4-6-child,.pr4-7-child,.pr4-8-child,.pr4-9-child,.pr4-10-child,.pr4-11-child,.pr4-12-child,.pr4-13-child,.pr8-1-child,.pr8-2-child,.pr8-3-child,.pr8-4-child,.pr8-5-child,.pr8-6-child,.pr8-7-child,.pr8-8-child,.pr8-9-child,.pr8-10-child,.pr8-11-child,.pr8-12-child{
+    position: absolute;
+    top: 0;
+    background-color: white;
+    left: 160px;
+    width: 200px;
+}
+/* pr 3 styling */
+.pr3-list{
+    position: absolute;
+    width: 200px;
+    left:-60%;
+    z-index: 999;
+    background-color: white;
+    padding-bottom:50px;
+}
+
+.pr3-list span,.pr5-list span,.pr4-list span,.pr8-list span,.pr9-list span{
+    display: inline-block;
+    padding: 12px 16px;
+}
+.list3-child{
+    position: absolute;
+    left:160px;
+    background-color: white;
+    top: 0;
+    width: 210px;
+}
+
+/* rohit styling */
+.rohit h2,.ruchita h2,.aayush h2,.sports-health h2,.home-kitchen h2,.cricket-parent h2{
+    padding:16px;
+}
+.boxes-pr,.ru-box{
+    height: 268px;
+    width:216px;
+    border: 2px solid grey;
+    padding: 6px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.boxes-pr img,.ruchi-box-parent img,.aayush img,.tp-box img,.ru-box img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* shop Student styling */
+.shop{
+    width: 405px;
+    height:593px;
+    padding: 0 12px 4px;
+    text-align: center;
+}
+.shop b,.tp-box b,.ru-box b{
+    color: green;
+}
+.shop-boxes{
+    width: 180px;
+    height: 232px;
+    border: 1px solid grey;
+}
+.top-phones{
+    width: 826px;
+    height:609px;
+    margin-left: 8px;
+}
+.top-phones img,.tp-box img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* criickeet styling */
+.tp-parent{
+    width: 405px;
+    height: 593px;
+    padding: 0 12px 4px;
+}
+.tp-box{
+    width: 180px;
+    height: 232px;
+    border:1px solid grey;
+    text-align: center;
+}
+
+/* footer styling */
+.story{
+    padding: 25px;
+    color: #565656;
+}
+
+.story p{
+    margin: 4px 0;
+}
+.story a{
+    color: #565656;
+}
+.story2{
+    padding:30px 0;
+}
+.ft-dark{
+    height: 354px;
+}
+.ft-dark-cont{
+    padding: 40px 60px 0;
+    color: white;
+}
+.ft-dark span{
+    color: #878787;
+}
+.cont1 a{
+    color: white;
+    text-decoration:none;
+}
+.cont2-1{
+    border-left: 2px solid #878787;
+    padding: 0 10px 0 32px;
+}
+.cont1,.cont2{
+    width: 50%;
+    padding-right: 10px;
+}
+/* mobiles ft */
+.ft-dark span img{
+    height: 18px;
+    width: 377px;
+    object-fit: cover;
+    object-position: center;
+}

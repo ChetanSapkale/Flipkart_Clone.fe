@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel='icon' href='./images/logo.svg'>
+</head>
+<body>
+    <div class="grandParent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a href="#"><img src="./images/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 w-25">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle"></i> Login
+                  </a>
+                  <ul class="dropdown-menu overflow-hidden" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./login.html"><i class="fa-regular fa-circle-user text-primary"></i> My Profie</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus text-primary"></i> Flipkart Plus Zone</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box text-primary"></i> Orders</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart text-primary"></i> Wishlists</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift text-primary"></i> rewards</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-vr-cardboard text-primary"></i> Gift Cards</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./cart.html"><i class="bi bi-cart"></i> <br> Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-shop"></i> <br> Become a Seller</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-three-dots-vertical"></i> 
+                  </a>
+                </li> -->
+              </ul>
+              <form class="d-flex justify-content-center">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!-- this is my self nav -->
+        <!-- <nav class="nav d-lg-block d-md-none d-sm-none">
+            <a href="#"><img src="./images/logo.svg" alt=""></a>
+            <input type="text" placeholder="Search for Products,Brands and More">
+            <div class="login-info d-flex align-items-center justify-content-around">
+                <span class="position-relative">
+                  <a href="./login.html" class="text-dark text-decoration-none"><i class="bi bi-person-circle"></i> Login <i class="bi bi-chevron-down"></i></a>
+                  <div class="login-info-child position-absolute bg-white">
+                    <div class="lg-top d-flex justify-content-between p-2">
+                      <h5>New Customer ?</h5>
+                      <h5><a href="">Sign Up</a></h5>
+                    </div>
+                    <hr class="m-0">
+                    <div class="p-3">
+                      <span class="d-inline-block mb-2"><i class="fa-regular fa-circle-user"></i> <a href="">My Profile</a></span><br>
+                      <span class="d-inline-block mb-2"><i class="fa-solid fa-plus"></i> <a href="">Flipkart Plus Zone</a></span><br>
+                      <span class="d-inline-block mb-2"><i class="fa-solid fa-box"></i> <a href="">Orders</a></span><br>
+                      <span class="d-inline-block mb-2"><i class="fa-regular fa-heart"></i> <a href="">Wishlists</a></span><br>
+                      <span class="d-inline-block mb-2"><i class="fa-solid fa-gift"></i> <a href="">rewards</a></span><br>
+                      <span><i class="fa-solid fa-vr-cardboard"></i> <a href="">Gift Cards</a></span>
+                    </div>
+                  </div>
+                </span>
+                <i class="bi bi-cart"></i> Cart <br>
+                <i class="bi bi-shop"></i> Become a Seller
+                <i class="bi bi-three-dots-vertical"></i> 
+            </div>
+        </nav> -->
+        <!-- this is my self nav end -->
+        <div class="showpr container mt-3 d-flex justify-content-between align-items-center flex-sm-wrap d-lg-flex">
+            <div class="pr1">
+              <a href="#"><img src="./images/nirma.webp" alt=""></a><br>
+              <span class="pr-content">Grocery</span>
+            </div>
+            <div class="pr2">
+              <a href="./mobiles.html"><img src="./images/mobile.png" alt=""></a><br>
+              <span class="pr-content">Mobiles</span>
+            </div>
+            <div class="pr3">
+                <a href="#"><img src="./images/fashion.webp" alt=""></a><br>
+                <span class="pr-content">Fashion <i class="bi bi-chevron-down"></i></span>
+                <div class="pr3-list d-none">
+                  <div class="pr3-list1">
+                    <span>Men's Top Wear
+                      <div class="list3-1-child none">
+                        <span><b>Men's in Top wears</b></span><br>
+                        <span>All</span><br>
+                        <span>Men's T-shirt</span><br>
+                        <span>Men's Casual Shirts</span><br>
+                        <span>Men's Formal Shirts</span><br>
+                        <span>Men's Kurtas</span><br>
+                        <span>Men's Ethinic Sets</span><br>
+                        <span>Men's Blazers</span><br>
+                        <span>Men's Raincoat</span><br>
+                        <span>Men's Windcheaters</span><br>
+                        <span>Men's Suit</span><br>
+                        <span>Men's Fabrics</span>
+                      </div>
+                    </span>
+                    <span>Men's Bottom Wear
+                      <div class="list3-2-child none">
+                        <span><b>More in bottoms wears</b></span><br>
+                        <span>All</span><br>
+                        <span>Men's Jeans</span><br>
+                        <span>Men's Trousers</span><br>
+                        <span>More TrackPants</span><br>
+                        <span>Men's Shorts</span><br>
+                        <span>Men's Cargos</span><br>
+                        <span>Men's Threefourths</span><br>
+                        <span>Men's Payjams & Loungepants</span><br>
+                        <span>Men's Dhoti</span><br>
+                        <span>Men's Ethimic Pyjama</span>
+                      </div>
+                    </span>
+                    <span>Women Ethinic
+                      <div class="list3-3-child none">
+                        <span><b>More in Women Ethinic</b></span> <br>
+                        <span>All</span><br>
+                        <span>Women Sarees</span><br>
+                        <span>Women Kurtas & kurtin</span><br>
+                        <span>Women Kurtas sets & Salwar sets</span><br>
+                        <span>Ehinic Dresses</span><br>
+                        <span>Women Dresses Materials</span><br>
+                        <span>Women Gowns</span><br>
+                        <span>Women Lehnaga Choils</span><br>
+                        <span>Women Leggis & Patialas</span><br>
+                        <span>Women Palazzos & Sharas</span><br>
+                        <span>Women Blouse</span><br>
+                        <span>Women Duppata</span>
+                      </div>
+                    </span>
+                    <span>Men Footwear
+                      <div class="list3-4-child none">
+                        <span><b>More in Men's Footwear</b></span>
+                        <span>All</span>
+                        <span>Men's Sports Shoes</span>
+                        <span>Men's Casual Shoes</span>
+                        <span>Men's Sandals & Floaters</span>
+                        <span>Men's Sleepers & Flip Flops</span>
+                        <span>Men's Formal Shoes</span>
+                        <span>Men's Ethinic Shoes</span>
+                        <span>Shoe Care</span>
+                      </div>
+                    </span>
+                    <span>Women Footwear
+                      <div class="list3-5-child none">
+                        <span><b>More in Women Footwear</b></span><br>
+                        <span>All</span><br>
+                        <span>Women Flats</span><br>
+                        <span>Women Heels</span><br>
+                        <span>Women Wedges</span><br>
+                        <span>Women Sleepers Flip Floop</span><br>
+                        <span>Women Casual Shoes</span><br>
+                        <span>Women Sports Shoes</span><br>
+                        <span>Women Balleirians</span><br>
+                        <span>Women Ethinic Shoes</span><br>
+                        <span>Women Sneakers</span><br>
+                        <span>Women Walking Shoes</span><br>
+                        <span>Women Boots</span>
+                      </div>
+                    </span>
+                    <span>Watches And Accessories
+                      <div class="list3-6-child none">
+                        <span><b>More in Watches And Accessories</b></span>
+                        <span>Men & Women Watches</span>
+                        <span>Men & Women Sunglasses</span>
+                        <span>Wallets</span>
+                        <span>Men & Women Belts</span>
+                        <span>Men Fashion Jwellery</span>
+                        <span>Precious Articles</span>
+                        <span>Kids Accessories</span>
+                        <span>Women Fashion Jwellery</span>
+                      </div>
+                    </span>
+                    <span>Women Wastern
+                      <div class="list3-7-child none">
+                        <span><b>More in Women Wastern</b></span><br>
+                        <span>All</span><br>
+                        <span>Women Tops</span><br>
+                        <span>Women Dresses</span><br>
+                        <span>Women T-shirt & Polo T-shirts</span><br>
+                        <span>Women Jeans</span><br>
+                        <span>Women Nighities & Night Dresses</span><br>
+                        <span>Women NightSuit</span><br>
+                        <span>Women Track Pants</span><br>
+                        <span>Women Trouser</span><br>
+                        <span>Women Jumpsuit</span><br>
+                        <span>Women Shapewear</span><br>
+                        <span>Women Sports Bra</span>
+                      </div>
+                    </span>
+                    <span>Bags,SuitCases & Luggage
+                      <div class="list3-8-child none">
+                        <span><b>More in Bags, SuitCases & Luggage</b></span><br>
+                        <span>All</span><br>
+                        <span>Bags & BackPacks</span><br>
+                        <span>SuitCases & Trollsys</span><br>
+                        <span>Dufflebags</span><br>
+                        <span>Rucksacks</span><br>
+                        <span>Handbags</span><br>
+                        <span>Slingbags</span><br>
+                        <span>Women's Cluthes & Wallets</span><br>
+                        <span>Messengers Bags</span><br>
+                        <span>Travel Accessories</span>
+                      </div>
+                    </span>
+                    <span>Kids 
+                      <div class="list3-9-child none">
+                        <span><b>More in Kids</b></span> <br>
+                        <span>Boys Innerwear</span><br>
+                        <span>Boys Innerwear</span><br>
+                        <span>All</span><br>
+                        <span>Girl Dresses</span><br>
+                        <span>Boys & Girls T-shirts</span><br>
+                        <span>Boys & Girls Combosets</span><br>
+                        <span>Boys & Girls Ethinic Wear</span><br>
+                        <span>Boys & Girls Jeans</span><br>
+                        <span>Boys & Girls Shorts</span><br>
+                        <span>Boys & Girls TrackPants</span><br>
+                        <span>Boys & Girls Innerwear</span><br>
+                        <span>infant wear</span><br>
+                        <span>Kids Slipper Flip Flops</span><br>
+                        <span>Kids Sports Shoes</span><br>
+                      </div>
+                    </span> <br>
+                    <span>Essentials
+                      <div class="list3-10-child none">
+                        <span><b>More in Essentials</b></span>
+                        <span>Men's Brief & Truks</span>
+                        <span>Men's Vests</span>
+                        <span>Men's Boxers</span>
+                        <span>Women Lingerie Sets</span>
+                        <span>Women Bra</span>
+                        <span>Women Panty</span>
+                        <span>Women Sarees</span>
+                        <span>Women Kurtas</span>
+                        <span>Womenf kurta Sets & Salwar Suits</span>
+                        <span>Boys Innerwear</span>
+                        <span>Boys Innerwear</span>
+                        <span>Girls Innerwear</span>
+                        <span>Women Slippers Flip Floops</span>
+                      </div>
+                    </span> <br>
+                    <span>Winter
+                      <div class="list3-11-child none">
+                        <span><b>More in Winter</b></span>
+                        <span>All</span>
+                        <span>Boys Innerwear</span>
+                        <span>Boys Innerwear</span>
+                        <span>Men's Jackets</span>
+                        <span>Men's Sweatshirts</span>
+                        <span>Men's Sweaters</span>
+                        <span>Men's Thermals</span>
+                        <span>Women's Jackets</span>
+                        <span>Women's Sweatshirts</span>
+                        <span>Women's Sweaters & Cardigans</span>
+                        <span>Women's Shrugs</span>
+                        <span>Kids Sweatshirts</span>
+                        <span>Women kurtas</span>
+                        <span>Kids Jackets</span>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="pr3-list2"></div>
+                </div>
+            </div>
+            <div class="pr4">
+                <a href="#"><img src="./images/laptop.webp" alt=""></a><br>
+                <span class="pr-content">Electronics <i class="bi bi-chevron-down"></i></span>
+                <div class="pr4-list d-none">
+                  <span>Audio
+                    <div class="pr4-1-child d-none">
+                      <span><b>More in Audio</b></span><br>
+                      <span>All</span><br>
+                      <span>Bluetooth Headphones</span><br>
+                      <span>Wired Headphones</span><br>
+                      <span>True Wireless Earbuds</span><br>
+                      <span>Bluetooth Speakers</span><br>
+                      <span>Soundbars</span><br>
+                      <span>Home Theaters</span><br>
+                      <span>Tv Streaming Device</span><br>
+                      <span>Remote Control</span><br>
+                      <span>DTH Set top box</span><br>
+                      <span>Headphones Pouch & Case Covers</span>
+                    </div>
+                  </span><br>
+                  <span>Electronics GST Store</span><br>
+                  <span>Cameras & Accessories
+                    <div class="pr4-3-child d-none">
+                      <span><b>More in Cameras & Accessories</b></span><br>
+                      <span>All</span><br>
+                      <span>DSLR & Mirrories</span><br>
+                      <span>Sports & action</span><br>
+                      <span>Point & Shoot</span><br>
+                      <span>instant Camera</span><br>
+                      <span>Camcorders</span><br>
+                      <span>Camera tripods</span><br>
+                      <span>Camera Lenses</span><br>
+                      <span>Drone</span><br>
+                      <span>Flashes</span><br>
+                      <span>Gimbals</span><br>
+                      <span>Binculars</span><br>
+                      <span>Other Cameras Accessories</span>
+                    </div>
+                  </span><br>
+                  <span>Computer Peripherals
+                    <div class="pr4-4-child d-none">
+                      <span><b>More in Peripherals</b></span><br>
+                      <span>All</span><br>
+                      <span>Printers</span><br>
+                      <span>Monitors</span><br>
+                      <span>Projetors</span><br>
+                      <span>Portable Projetors</span><br>
+                      <span>ink Catridges</span><br>
+                      <span>ink Bottles</span><br>
+                      <span>Receipt Printers</span><br>
+                      <span>Lamination Machines</span><br>
+                      <span>Note Counting Machines</span><br>
+                      <span>Barcodes Scanners</span><br>
+                      <span>Currency Detectors</span>
+                    </div>
+                  </span><br>
+                  <span>Gaming
+                    <div class="pr4-5-child d-none">
+                      <span><b>More in Gaming</b></span><br>
+                      <span>All</span><br>
+                      <span>Gaming Consoles</span><br>
+                      <span>Gaming Mouse</span><br>
+                      <span>Gaming Keyboards</span><br>
+                      <span>Gamepads</span><br>
+                      <span>Games</span><br>
+                      <span>Accesory Kits</span><br>
+                      <span>Gaming Accessories Combo</span><br>
+                      <span>Gaming MousePads</span><br>
+                      <span>Membership Cards</span><br>
+                      <span>Controllers</span><br>
+                      <span>Other Gaming Accessories</span><br>
+                      <span>Gaming Components</span>
+                    </div>
+                  </span><br>
+                  <span>Health & Personal Care
+                    <div class="pr4-6-child d-none">
+                      <span><b>More in Health & Personal Care</b></span><br>
+                      <span>All</span><br>
+                      <span>Trimmers</span><br>
+                      <span>Shavers</span><br>
+                      <span>Hair Straightners</span><br>
+                      <span>Hair Dryers</span><br>
+                      <span>Epilators</span><br>
+                      <span>Glucometers And Accessories</span><br>
+                      <span>Blood Pressure Monitors</span><br>
+                      <span>Digital Thermometers</span><br>
+                      <span>Weighting Scales</span><br>
+                      <span>Massagers</span><br>
+                      <span>Nebuilizers</span><br>
+                      <span>Vaporizers</span>
+                    </div>
+                  </span><br>
+                  <span>laptop Accessories
+                    <div class="pr4-7-child d-none">
+                      <span><b>More in Laptop Accessories</b></span><br>
+                      <span>All Mouse</span><br>
+                      <span>Mouse</span><br>
+                      <span>Laptop Keyboards</span><br>
+                      <span>Router</span><br>
+                      <span>Data Cards</span><br>
+                      <span>UPS</span><br>
+                      <span>USB Gadgets</span><br>
+                      <span>Security Software</span><br>
+                      <span>Lapotp Battery</span><br>
+                      <span>Laptop Adapter</span><br>
+                      <span>Wireless USB Adapter</span><br>
+                      <span>Processor</span><br>
+                      <span>Other Accessories</span>
+                    </div>
+                  </span><br>
+                  <span>Laptop And Desktop
+                    <div class="pr4-8-child d-none">
+                      <span><b>More in Laptop & Desktop</b></span>
+                      <span>All</span>
+                      <span>Laptops</span>
+                      <span>Gaming Laptops</span>
+                      <span>Desktop Pcs</span>
+                      <span>All in One PCs</span>
+                      <span>Mini Pcs</span>
+                      <span>Tower PCs</span>
+                      <span>PC Finder</span>
+                    </div>
+                  </span><br>
+                  <span>Mobile Aceesory
+                    <div class="pr4-9-child d-none">
+                      <span><b>More in Mobileaccerries</b></span><br>
+                      <span>All</span><br>
+                      <span>Plan Cases</span><br>
+                      <span>Designers Cases</span><br>
+                      <span>Screen Guards</span><br>
+                      <span>Camera Lens protectors</span><br>
+                      <span>Tablet Acessories</span><br>
+                      <span>MobilePouches</span><br>
+                      <span>MobileFlash</span><br>
+                      <span>MobileHolder</span><br>
+                      <span>MobileUSBGadget</span><br>
+                      <span>Mobiles Accessories Combos</span>
+                    </div>
+                  </span><br>
+                  <span>PowerBank
+                    <div class="pr4-10-child d-none">
+                      <span><b>More in Powerbank</b></span>
+                      <span>All</span><br>
+                      <span>Powerbank</span>
+                    </div>
+                  </span><br>
+                  <span>Smart Home automation
+                    <div class="pr4-11-child d-none">
+                      <span><b>More in Smart Home automation</b></span><br>
+                      <span>All</span><br>
+                      <span>Smart Assistants</span><br>
+                      <span>Smart lights</span><br>
+                      <span>Smart Cameras</span><br>
+                      <span>Smart Door locks</span><br>
+                      <span>Sensors & Alarms</span>
+                    </div>
+                  </span><br>
+                  <span>Smart Variables
+                    <div class="pr4-12-child">
+                      <span><b>More in Smart Wearables</b></span><br>
+                      <span>Smart Bands</span><br>
+                      <span>Smart Glasses</span>
+                    </div>
+                  </span>
+                  <span>Storage
+                    <div class="pr4-12-child d-none">
+                      <span><b>More in Storage</b></span><br>
+                      <span>All</span><br>
+                      <span>MobileMemoryCard</span><br>
+                      <span>ComputerStoragePendrive</span><br>
+                      <span>ExternalHardDrive</span><br>
+                      <span>InternalHardDrive</span>
+                    </div>
+                  </span><br>
+                  <span>Tables
+                    <div class="pr4-13-child">
+                      <span><b>More in Tables</b></span><br>
+                      <span>All</span><br>
+                      <span>Tables With Call Facility</span><br>
+                      <span>Tablets Without Call Facility</span>
+                    </div>
+                  </span>
+                </div>
+            </div>
+            <div class="pr5">
+              <a href="#"><img src="./images/chair.webp" alt=""></a><br>
+              <span class="pr-content">Home & <br>Furniture <i class="bi bi-chevron-down"></i></span>
+              <div class="pr5-list d-none">
+                  <div class="pr5-list1">
+                    <span>Home Furnishing
+                      <div class="list5-1-child d-none">
+                        <span><b>More in Home Furnishings</b></span><br>
+                        <span>All</span><br>
+                        <span>Bed Lines</span> <br>
+                        <span>Bedsheets</span> <br>
+                        <span>Blankets</span><br>
+                        <span>Curtains & Accessories</span><br>
+                        <span>Bath Line</span><br>
+                        <span>Floor Coverings</span><br>
+                        <span>Coers & protectors</span><br>
+                        <span>Cushions & Pillows</span><br>
+                        <span>Kitchen Line Sets</span><br>
+                        <span>Table Line Sets</span><br>
+                        <span>Sofa & Curtains Fabrics</span>
+                      </div>
+                    </span>
+                    <span>Furniture Studio</span>
+                    <span>Living Room Furniture
+                      <div class="list5-3-child d-none">
+                        <span><b>More in Living Room Furniture</b></span><br>
+                        <span>Sofa Sets & Sectionals</span><br>
+                        <span>Tv Units</span><br>
+                        <span>Dinning Sets</span><br>
+                        <span>Sofa Beds</span><br>
+                        <span>Recliners</span><br>
+                        <span>Living Room Chairs</span><br>
+                        <span>Cabinet & Drawers</span><br>
+                        <span>Bookshelves</span><br>
+                        <span>Shoe Racks</span>
+                      </div>
+                    </span>
+                    <span>Kitchen & Dining
+                      <div class="list5-4-child d-none">
+                        <span><b>More in Kitchen & Dinning</b></span><br>
+                        <span>All</span><br>
+                        <span>Cookware</span><br>
+                        <span>Knives, Choopers & Cutters</span><br>
+                        <span>Gas Stove & Accessories</span><br>
+                        <span>Kitchen tools</span><br>
+                        <span>Tableware & Dinnerware</span><br>
+                        <span>containers & Kitchen Storage</span>
+                        <span>Barware</span>
+                        <span>Bakeware</span>
+                        <span>Handjuicers & Grinders</span>
+                        <span>Disposable Supplies</span>
+                        <span>outdoor cooking</span>
+                      </div>
+                    </span>
+                    <span>Bedroom Furniture
+                      <div class="list5-5-child d-none">
+                        <span><b>More in Bedroom Furniture</b></span><br>
+                        <span>Mattresses</span><br>
+                        <span>Beds</span><br>
+                        <span>Wardrobes</span><br>
+                        <span>Side Tables</span><br>
+                        <span>Tv Units</span><br>
+                        <span>office Tables</span><br>
+                        <span>office Chairs</span><br>
+                        <span>Bookshelves</span><br>
+                        <span>Bar Cabinets</span><br>
+                        <span>Bar Stools</span><br>
+                        <span>Rocking Chairs</span><br>
+                        <span>Benches</span>
+                      </div>
+                    </span>
+                    <span>Space Saving Furniture</span>
+                    <span>Home Decor
+                      <div class="list5-7-child d-none">
+                        <span><b>More in Home Decor</b></span><br>
+                        <span>All</span><br>
+                        <span>Lightings</span><br>
+                        <span>Stikers & Wallpapers</span><br>
+                        <span>Paintings & Posters</span><br>
+                        <span>Clocks</span><br>
+                        <span>Showpipers & Decoratives</span><br>
+                        <span>Wall Decor</span><br>
+                        <span>Flowers & Vases</span><br>
+                        <span>Homes Fragrences</span><br>
+                        <span>Windchimes & Dream catcher</span><br>
+                        <span>Photo Frames & Albums</span><br>
+                        <span>Diyas, Candles & Holders</span><br>
+                        <span>Festive & Giftng</span>
+                      </div>
+                    </span>
+                    <span>Tools & Utility
+                      <div class="list5-8-child d-none">
+                        <span><b>More in Tools & Utility</b></span> <br>
+                        <span>All</span><br>
+                        <span>Hand Tools</span><br>
+                        <span>Power Tools</span><br>
+                        <span>Measuring Tools</span><br>
+                        <span>Home Storage & Organizers</span><br>
+                        <span>Umberalls</span><br>
+                        <span>Applicance Trolley & Stands</span><br>
+                        <span>Cloth Dryer Stand</span><br>
+                        <span>Applicance Filter & Cartrideges</span><br>
+                        <span>Laundry Organization</span><br>
+                        <span>Lock & Security</span><br>
+                        <span>Fire & Peronal Safety</span><br>
+                        <span>Pants Supplies & Equipments</span>
+                      </div>
+                    </span>
+                    <span>Woks Space Furniture</span>
+                    <span>Kids Furniture</span>
+                    <span>Lightings & Electronics
+                      <div class="list5-11-child d-none">
+                        <span><b>More in Lightings & Electricals</b></span><br>
+                        <span>All</span><br>
+                        <span>Bulbs</span><br>
+                        <span>Emergency Lights</span><br>
+                        <span>Torches</span><br>
+                        <span>TubeLights</span><br>
+                        <span>Extensions Cords</span><br>
+                        <span>outdoor Lamps</span><br>
+                        <span>Batteries</span><br>
+                        <span>Electricalwire</span><br>
+                        <span>ElectricalSocket</span><br>
+                        <span>ElectricDoorBell</span><br>
+                        <span>Solar Lights, Panels & Batteries</span><br>
+                        <span>Electrical Hardware</span><br>
+                      </div>
+                    </span>
+                    <span>Cleaning & Baths
+                      <div class="list5-12-child d-none">
+                        <span><b>More in Cleaning & Bath</b></span><br>
+                        <span>All</span><br>
+                        <span>Mops</span><br>
+                        <span>Cleaning Supplies</span><br>
+                        <span>House Hold Supplies</span><br>
+                        <span>Air Freeshers</span><br>
+                        <span>Cleaning Gloves</span><br>
+                        <span>Liquid Detergends</span><br>
+                        <span>Taps & Faquet</span><br>
+                        <span>Toothbrush holder</span><br>
+                        <span>Bathroom Rack & Shelves</span><br>
+                        <span>Show Heads</span><br>
+                        <span>Bath & Kitchen Fitings</span><br>
+                        <span>Batroom Accessories</span>
+                      </div>
+                    </span>
+                    <span>Pet & Gardening
+                      <div class="list5-13-child d-none">
+                        <span><b>More in Pet & Gardening</b></span><br>
+                        <span>All</span><br>
+                        <span>Plant Seeds</span><br>
+                        <span>Soil Manure</span><br>
+                        <span>Pots & Planters</span><br>
+                        <span>Plant & Planters</span><br>
+                        <span>garden tool set</span><br>
+                        <span>watering Equipments</span><br>
+                        <span>Dog Essentials</span><br>
+                        <span>Fish & Aquatic</span><br>
+                        <span>Pet Groomings & Hygenic</span><br>
+                        <span>Pet Toys</span><br>
+                        <span>Pet Toys</span><br>
+                        <span>Pet Health & Safety</span>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="pr2-list2"></div>
+              </div>
+            </div>
+            <div class="pr6">
+              <a href="#"><img src="./images/tv.webp" alt=""></a><br>
+              <span class="pr-content">Appliances</span>
+            </div>
+            <div class="pr7">
+              <a href="#"><img src="./images/travel.webp" alt=""></a><br>
+              <span class="pr-content">Travel <i class="bi bi-chevron-down"></i></span>
+            </div>
+            <div class="pr8">
+              <a href=""><img src="./images/doll.webp" alt=""></a><br>
+              <span class="pr-content">Beauty,Toys <br> & More <i class="bi bi-chevron-down"></i></span>
+              <div class="pr8-list d-none">
+                <span>Beauty & Personla Care
+                  <div class="pr8-1-child d-none">
+                    <span><b>More in Beauty & Personal Care</b></span>
+                    <span>View All</span>
+                    <span>Bath & Oral Care</span>
+                    <span>Personal Hygiene</span>
+                    <span>Eye Makeup</span>
+                    <span>Lip Makeup</span>
+                    <span>Hair Care</span>
+                    <span>Bath Essentials</span>
+                    <span>Women's Personal Hygiene</span>
+                    <span>Body & Skin Care</span>
+                    <span>Top Brand Deals</span>
+                  </div>
+                </span><br>
+                <span>Men's Grooming
+                  <div class="pr8-2-child d-none">
+                    <span><b>More in Men's Grooming</b></span>
+                    <span>View All</span>
+                    <span>Face Wash</span>
+                    <span>Beard Oils</span>
+                    <span>Hair Styling</span>
+                    <span>Shaving Essentials</span>
+                    <span>Aftershave</span>
+                    <span>Face Creams & Face Packs</span>
+                    <span>Soaps & Bodywashes</span>
+                    <span>Men's Grooming Combos</span>
+                    <span>Sexual Wellness</span>
+                  </div>
+                </span><br>
+                <span>Food & Drinks
+                  <div class="pr8-3-child d-none">
+                    <span><b>More in Foods & Drinks</b></span><br>
+                    <span>View All</span><br>
+                    <span>Nuts & Dry Fruits</span><br>
+                    <span>Cooking Essentials</span><br>
+                    <span>BreakFast items</span><br>
+                    <span>Snaks Corner</span><br>
+                    <span>Jams,Spreads & Honey</span><br>
+                    <span>Ready To Cook & Eat</span><br>
+                    <span>Chocolates</span><br>
+                    <span>Baking Essentials</span><br>
+                    <span>Sweets Store</span><br>
+                    <span>Top Brand Deals</span>
+                  </div>
+                </span><br>
+                <span>Nutrition & Health Care
+                  <div class="pr8-4-child d-none">
+                    <span><b>More in Nutrition & Health Care</b></span><br>
+                    <span>View All</span><br>
+                    <span>Masks</span><br>
+                    <span>Ayurvedic Supplements</span><br>
+                    <span>Health Drinks</span><br>
+                    <span>Vitamin Supplements</span><br>
+                    <span>Protein Supplements</span><br>
+                    <span>Women's Safety</span><br>
+                    <span>Home Medicines</span><br>
+                    <span>Home Medica Supplies</span><br>
+                    <span>Healthcare Comos</span><br>
+                    <span>Professional Medical Supplies</span><br>
+                    <span>Top Brand Deals</span>
+                  </div>
+                </span><br>
+                <span>Baby Care
+                  <div class="pr8-5-child d-none">
+                    <span><b>More in Baby Care</b></span><br>
+                    <span>View All</span><br>
+                    <span>Baby Diapers</span><br>
+                    <span>Baby Wipes</span><br>
+                    <span>Baby Bath & Grooming</span><br>
+                    <span>Baby Gift Sets & Combo</span><br>
+                    <span>Baby Medical & Health Care</span><br>
+                    <span>Nursing & Breast Feeding</span><br>
+                    <span>Feeding Bottles, Utensils & Accessories</span><br>
+                    <span>Baby Food</span><br>
+                    <span>Baby Bedding</span><br>
+                    <span>Baby Gear</span><br>
+                    <span>Top Brand Deals</span>
+                  </div>
+                </span><br>
+                <span>Toys & School Supplies
+                  <div class="pr8-6-child d-none">
+                    <span><b>More in Toys & School Supplies</b></span><br>
+                    <span>View All</span><br>
+                    <span>Remote Control Toys</span><br>
+                    <span>Soft Toys </span><br>
+                    <span>Puzzles</span><br>
+                    <span>Board Games</span><br>
+                    <span>Learning & Educational Toys</span><br>
+                    <span>Cars & Die-Cast Vechiles</span><br>
+                    <span>Baby Toys</span><br>
+                    <span>Gifting Toys</span><br>
+                    <span>School Bags & BackPacks</span><br>
+                    <span>Scholl Supplies</span><br>
+                    <span>Top Brands Deals</span>
+                  </div>
+                </span><br>
+                <span>Sports & Fitness
+                  <div class="pr8-7-child d-none">
+                    <span><b>More in Sports & Fitness</b></span><br>
+                    <span>Viwe All</span><br>
+                    <span>Badminton</span><br>
+                    <span>Cricket</span><br>
+                    <span>Cycling</span><br>
+                    <span>Football</span><br>
+                    <span>Fitness Equipments</span><br>
+                    <span>Supports</span><br>
+                    <span>Shakers & Slippers</span><br>
+                    <span>Gym Gloves</span><br>
+                    <span>Dumbells</span><br>
+                    <span>Yoga</span><br>
+                    <span>Top Brand Deals</span>
+                  </div>
+                </span><br>
+                <span>Books
+                  <div class="pr8-8-child d-none">
+                    <span><b>More in Books</b></span>
+                    <span>View All</span>
+                    <span>Test prep</span>
+                    <span>Academics</span>
+                    <span>Literature & Fiction</span>
+                    <span>Non Ficton</span>
+                    <span>Young Readers</span>
+                    <span>Audio Books</span>
+                    <span>Stage Equipments & Accessories</span>
+                  </div>
+                </span><br>
+                <span>Music
+                  <div class="pr8-9-child d-none">
+                    <span><b>More in Music</b></span>
+                    <span>Musical Instrumentals</span>
+                    <span>Music & Tv Shows</span>
+                    <span>Acoustic Guitars</span>
+                    <span>Keys and Syntizers</span>
+                    <span>Microphones</span>
+                    <span>Studio and Stage Equipments</span>
+                    <span>String Instruments</span>
+                    <span>indian Instruments</span>
+                    <span>Wind Instrumentals</span>
+                    <span>Musical Keyboards</span>
+                  </div>
+                </span><br>
+                <span>Stationary & Office Supplies
+                  <div class="pr8-10-child d-none">
+                    <span><b>More in & Stationary Office Supplies</b></span><br>
+                    <span>View All</span><br>
+                    <span>Pen & Gifts Sets</span><br>
+                    <span>Notebooks & Diaries</span><br>
+                    <span>Art Supplies</span><br>
+                    <span>Calculators</span><br>
+                    <span>Keychains</span><br>
+                    <span>Card Holders</span><br>
+                    <span>Desk Organizes</span><br>
+                    <span>Office Supplies</span><br>
+                    <span>Office Equipments</span><br>
+                    <span>Pary Supplies</span><br>
+                    <span>Top Brand Deals</span>
+                  </div>
+                </span>
+                <span>Auto Aceessories
+                  <div class="pr8-11-child d-none">
+                    <span><b>More in Auto Accessories</b></span><br>
+                    <span>View All</span><br>
+                    <span>Bike Essentials</span>
+                    <span>Car & Bike Covers</span>
+                    <span>CarAirFreshners</span>
+                    <span>CarBluetoothDevice</span>
+                    <span>CarLubriant</span>
+                    <span>CarMediaPlayer</span>
+                    <span>Helmet</span>
+                    <span>Vechile Washing & Cleaning Products</span>
+                    <span>Tyres</span>
+                  </div>
+                </span><br>
+                <span>Safety & Hygiene Essentials
+                  <div class="pr8-12-child d-none">
+                    <span><b>More in Safety & Hygiene Essentials</b></span><br>
+                    <span>View All</span><br>
+                    <span>Masks</span><br>
+                    <span>Seitizers</span><br>
+                    <span>Hand Wash</span><br>
+                    <span>Gloves</span><br>
+                    <span>PPE Kits</span><br>
+                    <span>Face Shields</span><br>
+                    <span>UV Sterillizer Box</span><br>
+                    <span>Safety Goggles</span><br>
+                    <span>Vitamins For Immunity</span>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <div class="pr9">
+              <a href=""><img src="./images/toys.webp" alt=""></a><br>
+              <span>Tow <br> Wheelers <i class="bi bi-chevron-down"></i></span>
+              <div class="pr9-list d-none">
+                <span>Petrol Vechiles</span><br>
+                <span>Electric Vechiles</span>
+              </div>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide mt-3 container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slider1.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider2.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider3.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider4.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider5.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider6.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider7.webp" class="d-block w-100" alt="path not found">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider8.webp" class="d-block w-100" alt="path not found">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- carousel end -->
+        <!-- show products -->
+        <div class="rohit mt-3 bg-white ">
+          <h2 class="text-sm-center">Best of Electronics</h2>
+          <div class="boxes-parent d-flex justify-content-between flex-sm-wrap justify-content-sm-start">
+            <div class="boxes-pr">
+              <img src="./images/printer.jpeg" alt="">
+              <span>Printers <br><b>From $2336</b></span>
+            </div>
+            <div class="boxes-pr">
+              <img src="./images/buds.jpeg" alt=""><br>
+              <span>Best True Wireless Hea... <b>Grab Now</b></span>
+            </div>
+            <div class="boxes-pr">
+              <img src="./images/smartwatch.jpeg" alt=""><br>
+              <span>Boat Watches <br> <b>From $1,099</b></span>
+            </div>
+            <div class="boxes-pr">
+              <img src="./images/fastwatch.jpeg" alt="">
+              <span>Fastrack smartwatches <br> <b>From 1,399</b></span>
+            </div>
+            <div class="boxes-pr">
+              <img src="./images/keyboard.jpeg" alt=""><br>
+              <span>Top Selling Dell keyboard <br> <b>From $229</b></span>
+            </div>
+            <div class="boxes-pr"></div>
+          </div>
+        </div>
+
+         
+        <!-- show products end -->
+        <div class="ruchita mt-3 bg-white">
+          <h2 class="text-sm-center">Beauty,Food,Toys & more</h2>
+          <div class="ruchi-box-parent d-flex justify-content-between flex-sm-wrap">
+            <div class="ru-box">
+              <img src="./images/cycle.jpeg" alt=""><br>
+              <span>Geared Cycles <br><b>up top 70% off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/batman.jpeg" alt=""><br>
+              <span>Best of Action Toys <br> <b>up To 70% off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/guitar.jpeg" alt=""><br>
+              <span>Strings Instrumentals <br> <b>Up To 70% off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/book.jpeg" alt=""><br>
+              <span>Ficton Books <br> <b>up to 70% off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/gym.jpeg" alt=""><br>
+              <span>Gym Essentials <br> <b>From $139</b></span>
+            </div>
+            <div class="ru-box"></div>
+          </div>
+        </div>
+
+        <!-- shop student -->
+        <div class="aayush mt-3 bg-white overflow-hidden">
+          <h2 class="text-sm-center">Shop Student Essentials</h2>
+          <div class="shop-box-parent d-flex">
+            <div class="shop d-flex flex-wrap justify-content-between">
+              <div class="shop-boxes">
+                <img src="./images/hair.jpeg" alt=""><br>
+                <span>Hair Oil <br><b>Min. 50% Off</b></span>
+              </div>
+              <div class="shop-boxes">
+                <img src="./images/shirt.jpeg" alt=""><br>
+                <span>Men's T-shirt <br><b>Min. 50% Off</b></span>
+              </div>
+              <div class="shop-boxes">
+                <img src="./images/dryfruit.jpeg" alt=""><br>
+                <span>Dry Fruits <br> <b>Min .50% Off</b></span>
+              </div>
+              <div class="shop-boxes">
+                <img src="./images/lpbag.jpeg" alt=""><br>
+                <span>Laptops Bags <br> <b>Min.70% Off</b></span>
+              </div>
+            </div>
+            <div class="top-phones">
+              <a href=""><img src="./images/phone2.jpeg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- cricket -->
+        <div class="cricket-parent d-lg-flex mt-3 justify-content-lg-around flex-sm-column justify-content-sm-center flex-lg-row">
+          <div class="bg-white">
+            <h2 class="text-sm-center text-md-center">Latest Summer Styles</h2>
+            <div class="tp-parent d-flex flex-wrap justify-content-between w-sm-100 m-sm-auto">
+              <div class="tp-box">
+                <img src="/images/headset.jpeg" alt=" not found"><br>
+                <span>headset <br><b>Min. 50% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/sunglass.jpeg" alt=" not found"><br>
+                <span>Sunglasses <br> <b>Min. 50% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/shoe.jpeg" alt=" not found"><br>
+                <span>Men's Sports Sho... <br> <b>Min. 70% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/neck.jpeg" alt=" not found">
+                <span>Neckband <br> <b>Widset Range</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white">
+            <h2 class="text-sm-center text-md-center">Gadgets & Appliances</h2>
+            <div class="tp-parent d-flex justify-content-between flex-wrap m-sm-auto">
+              <div class="tp-box">
+                <img src="./images/torch.jpeg" alt=""><br>
+                <span>Torches<br><b>Grab or Gone</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/chopper.jpeg" alt=""><br>
+                <span>Choppers & slicers<br><b>Min .50% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/bottle.jpeg" alt=""><br>
+                <span>Water Bottles & F...<br><b>Min .50% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/bed.jpeg" alt=""><br>
+                <span>Beadsheets<br><b>Specia Offer</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white">
+            <h2 class="text-sm-center text-md-center">Cricket Must-Haves</h2>
+            <div class="tp-parent d-flex justify-content-between flex-wrap m-sm-auto">
+              <div class="tp-box">
+                <img src="./images/shirt.jpeg" alt=""><br>
+                <span>Men's T-shirt<br><b>Min. 50% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/slipper.jpeg" alt=""><br>
+                <span>Men's Slippers & ...<br><b>Min. 70% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/cap.jpeg" alt=""><br>
+                <span>Men's Caps<br><b>Min. 50% Off</b></span>
+              </div>
+              <div class="tp-box">
+                <img src="./images/saree.jpeg" alt=""><br>
+                <span>Women's Sarees<br><b>Min. 50% Sarees</b></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sport health -->
+        <div class="sports-health bg-white mt-3">
+          <h2 class="text-sm-center">Sports, Healthcare & more</h2>
+          <div class="sp-he-parent d-flex justify-content-between flex-sm-wrap">
+            <div class="ru-box">
+              <img src="./images/dryfruit.jpeg" alt=""><br>
+              <span>Dry Fruits<br><b>Under 199</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/treadmill.jpeg" alt=""><br>
+              <span>Treadmill<br><b>Min. 70% Off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/coffe.jpeg" alt=""><br>
+              <span>Coffe<br><b>Min. 80% Off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/yogamet.jpeg" alt=""><br>
+              <span>Yogamet<br><b>Up To 70% Off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/puzzel.jpeg" alt=""><br>
+              <span>Puzzles<br><b>Min 20% Off</b></span>
+            </div>
+            <div class="ru-box"></div>
+          </div>
+        </div>
+
+        <!--home & kitchen -->
+         <div class="home-kitchen mt-3 bg-white">
+            <h2 class="text-sm-center">Home & Kitchen Essentials</h2>
+            <div class="hm-ki-parent d-flex justify-content-between flex-sm-wrap">
+              <div class="ru-box">
+                <img src="./images/homedecor.jpeg" alt=""><br>
+                <span>Home Decor<br><b>Up To 80% Off</b></span>
+              </div>
+              <div class="ru-box">
+                <img src="./images/clock.jpeg" alt=""><br>
+                <span>Clock<br><b>Up To 80% Off</b></span>
+              </div>
+              <div class="ru-box">
+                <img src="./images/wllpaper.jpeg" alt=""><br>
+                <span>Wallpaper<br><b>Under $99</b></span>
+              </div>
+              <div class="ru-box">
+                <img src="./images/vells.jpeg" alt=""><br>
+                <span>Vells<br><b>Upto 80% Off</b></span>
+              </div>
+              <div class="ru-box">
+                <img src="./images/shopiece.jpeg" alt=""><br>
+                <span>Showpieces<br><b>Up To 80%</b></span>
+              </div>
+              <div class="ru-box"></div>
+            </div>
+         </div>
+
+         <!-- top Deals -->
+         <div class="top-deals home-kitchen mt-3 bg-white">
+          <h2 class="text-sm-center">Top Deals</h2>
+          <div class="top-deal-parent d-flex justify-content-between flex-sm-wrap">
+            <div class="ru-box">
+              <img src="./images/puma.jpeg" alt=""><br>
+              <span>Puma Adidas<br> <b>Min. 40% Off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/ipad.jpeg" alt=""><br>
+              <span>Apple ipods <br> <b>Shop Now!</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/ghagra.jpeg" alt=""><br>
+              <span>Sabse Amazing Deals <br><b>From $299</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/camera.jpeg" alt=""><br>
+              <span>Instax Cameras<br><b>From $3,999</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/kurta.jpeg" alt=""><br>
+              <span>Kurta Sets <br> <b>Min 70% Off</b></span>
+            </div>
+            <div class="ru-box"></div>
+          </div>
+         </div>
+
+         <!-- pick you styles -->
+         <div class="pick-your-styles home-kitchen mt-3 bg-white">
+          <h2 class="text-sm-center">Pick Your Styles</h2>
+          <div class="pick-style-parent d-flex justify-content-between flex-sm-wrap">
+            <div class="ru-box">
+              <img src="./images/hoodie.jpeg" alt=""><br>
+              <span>Sweatshirts,Hoddies,Jac...<br><b>From $249</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/uspolo.jpeg" alt=""><br>
+              <span>U.S Polo Assn.,Highlande...<br><b>Min. 40% Off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/bagTrolley.jpeg" alt=""><br>
+              <span>Bags, Trolleys, Luggage <br><b>50-70%+Extra 10% Off</b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/nivia.jpeg" alt=""><br>
+              <span>Nivia, Van Heusen Flex..<br><b>Up To 60% Off </b></span>
+            </div>
+            <div class="ru-box">
+              <img src="./images/tsaree.jpeg" alt=""><br>
+              <span>Trendy Sarees <br><b>Under $499</b></span>
+            </div>
+            <div class="ru-box"></div>
+          </div>
+        </div>
+
+        <!-- tv-appliances -->
+        <div class="tv-appliences home-kitchen mt-3 bg-white">
+          <h2 class="text-sm-center">Top Deals On Tv & Appliances</h2>
+          <div class="tv-appliances-parent d-flex justify-content-between flex-sm-wrap">
+            <div class="ru-box"><img src="./images/fridge.jpeg" alt=""><br>
+              <span>Godrej Refgrigerator<br><b>From $7,240</b></span>
+            </div>
+            <div class="ru-box"><img src="./images/dofridge.jpeg" alt=""><br>
+              <span>Double Door Refgrigerator<br><b>From $16,129</b></span>
+            </div>
+            <div class="ru-box"><img src="./images/snfridge.jpeg" alt=""><br>
+              <span>Sanmsung Refgrigerator<br><b>From $12,690</b></span>
+            </div>
+            <div class="ru-box"><img src="./images/washing.jpeg" alt=""><br>
+              <span>Semi Automatic Washing...<br><b>Buy Now</b></span>
+            </div>
+            <div class="ru-box"><img src="./images/singlefridge.jpeg" alt=""><br>
+              <span>Single Door Refgrigerator<br><b>From $9,990</b></span>
+            </div>
+            <div class="ru-box"></div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="mt-5 overflow-hiden">
+          <div class="story">
+            <div class="_2j7a4R"><div class="_15e_hF">Top Stories :<a class="_2jPK0r" href="/brands" title="Brand Directory">Brand Directory</a></div><div class="_3xGbi-"><span class="idEVeE">Most searched for on Flipkart:</span><a class="_2HvN4k" href="/apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?otracker=undefined_footer" title="iPhone 15">iPhone 15</a><a class="_2HvN4k" href="/apple-iphone-15-plus-blue-128-gb/p/itm4022c14383050?otracker=undefined_footer" title="iPhone 15 Plus">iPhone 15 Plus</a><a class="_2HvN4k" href="/apple-iphone-15-pro-blue-titanium-128-gb/p/itmcba9124f132a8?otracker=undefined_footer" title="iPhone 15 Pro">iPhone 15 Pro</a><a class="_2HvN4k" href="/apple-iphone-15-pro-max-blue-titanium-256-gb/p/itm4a0093df4a3d7?otracker=undefined_footer" title="iPhone 15 Pro Max">iPhone 15 Pro Max</a><a class="_2HvN4k" href="/vivo-x100-asteroid-black-256-gb/p/itm60fe0113c39cb?otracker=undefined_footer" title="Vivo x 100">Vivo x 100</a><a class="_2HvN4k" href="/spoyl-ff-store?otracker=undefined_footer" title="Spoyl Store">Spoyl Store</a><a class="_2HvN4k" href="/samsung-galaxy-z-flip5-mint-256-gb/p/itm3038611e95123?otracker=undefined_footer" title="SAMSUNG Flip5">SAMSUNG Flip5</a><a class="_2HvN4k" href="/samsung-galaxy-z-fold5-phantom-black-512-gb/p/itm4d14abce6dc2f?otracker=undefined_footer" title="SAMSUNG Fold5">SAMSUNG Fold5</a><a class="_2HvN4k" href="/superelite-credit-card-store?otracker=undefined_footer" title="Flipkart Axis Bank Super Elite Credit card">Flipkart Axis Bank Super Elite Credit card</a><a class="_2HvN4k" href="/5g-mobile-phones-store?otracker=undefined_footer" title="5G Mobile Phones">5G Mobile Phones</a><a class="_2HvN4k" href="/primebook-laptop-store?otracker=undefined_footer" title="Primebook Laptops">Primebook Laptops</a><a class="_2HvN4k" href="/motorola-edge-40-jet-black-256-gb/p/itmbe5b18bf1f229?otracker=undefined_footer" title="Moto Edge 40">Moto Edge 40</a><a class="_2HvN4k" href="/pages/grievance-redressal-mechanism?otracker=undefined_footer" title="Grievance Redressal">Grievance Redressal</a><a class="_2HvN4k" href="/oppo-reno7-pro-5g-startrails-blue-256-gb/p/itm9a6b0ca45fe90?otracker=undefined_footer" title="OPPO Reno7 Pro 5G">OPPO Reno7 Pro 5G</a><a class="_2HvN4k" href="/apple-iphone-13-pink-128-gb/p/itm6e30c6ee045d2?otracker=undefined_footer" title="iPhone 13">iPhone 13</a><a class="_2HvN4k" href="/helpcentre?otracker=undefined_footer" title="Help Centre">Help Centre</a><a class="_2HvN4k" href="/helpcentre/trackOrder/i/2?otracker=undefined_footer" title="Track Orders">Track Orders</a><a class="_2HvN4k" href="/helpcentre/manageOrder/i/3?otracker=undefined_footer" title="Manage Orders">Manage Orders</a><a class="_2HvN4k" href="/helpcentre/returnOrder/i/4?otracker=undefined_footer" title="Return Orders">Return Orders</a><a class="_2HvN4k" href="/the-gift-card-store?otracker=undefined_footer" title="Gift Cards Store">Gift Cards Store</a><a class="_2HvN4k" href="/flipkart-axis-bank-credit-card-store?otracker=undefined_footer" title="Flipkart Axis Bank Credit Card">Flipkart Axis Bank Credit Card</a><a class="_2HvN4k" href="/flipkart-pay-later-store?otracker=undefined_footer" title="Pay Later">Pay Later</a></div><div class="_3xGbi-"><a href="/mobiles" class="idEVeE" title="Mobiles">Mobiles</a><a class="_2HvN4k" href="/redmi-12-5g-pastel-blue-128-gb/p/itm71f3d06ed5235?otracker=undefined_footer" title="Redmi 12 5G">Redmi 12 5G</a><a class="_2HvN4k" href="/realme-12-5g-navigator-beige-128-gb/p/itmaf084e49c78e2?otracker=undefined_footer" title="Realme 12+  5G">Realme 12+  5G</a><a class="_2HvN4k" href="/motorola-g84-5g-marshmallow-blue-256-gb/p/itm7807a599d2202?otracker=undefined_footer" title="Motorola G84">Motorola G84</a><a class="_2HvN4k" href="/realme-c53-champion-gold-128-gb/p/itm5df90168ecd05?otracker=undefined_footer" title="Realme C53">Realme C53</a><a class="_2HvN4k" href="/infinix-smart-8-rainbow-blue-64-gb/p/itmb5696a34ad441?otracker=undefined_footer" title="Infinix Smart 8">Infinix Smart 8</a><a class="_2HvN4k" href="/samsung-galaxy-s23-5g-phantom-black-256-gb/p/itm347e695feffe7?otracker=undefined_footer" title="Samsung Galaxy S23 5G">Samsung Galaxy S23 5G</a><a class="_2HvN4k" href="/samsung-galaxy-s21-fe-5g-snapdragon-888-olive-256-gb/p/itmb3a0b1e650a0e?otracker=undefined_footer" title="Samsung Galaxy S21 FE 5G Qualcomm">Samsung Galaxy S21 FE 5G Qualcomm</a><a class="_2HvN4k" href="/vivo-v30-5g-peacock-green-256-gb/p/itme3a94b78a025f?otracker=undefined_footer" title="vivo V30">vivo V30</a><a class="_2HvN4k" href="/samsung-galaxy-s24-5g-amber-yellow-256-gb/p/itmebc700bb8d159?otracker=undefined_footer" title="Samsung Galaxy S24 5G">Samsung Galaxy S24 5G</a><a class="_2HvN4k" href="/samsung-galaxy-s24-5g-cobalt-violet-512-gb/p/itmdbe5ac49590db?otracker=undefined_footer" title="Samsung Galaxy S24+ 5G">Samsung Galaxy S24+ 5G</a><a class="_2HvN4k" href="/apple-iphone-12-white-64-gb/p/itm8b88bdc03cd79?otracker=undefined_footer" title="iPhone 12 64GB">iPhone 12 64GB</a><a class="_2HvN4k" href="/apple-iphone-12-pro-graphite-512-gb/p/itmdf0ffb4f2150f?otracker=undefined_footer" title="iPhone 12 Pro 512GB">iPhone 12 Pro 512GB</a><a class="_2HvN4k" href="/apple-iphone-12-blue-128-gb/p/itm02853ae92e90a?otracker=undefined_footer" title="iPhone 12 128GB">iPhone 12 128GB</a><a class="_2HvN4k" href="/vivo-y15-aqua-blue-64-gb/p/itmfgadf77s87w8x?otracker=undefined_footer" title="Vivo Y15">Vivo Y15</a><a class="_2HvN4k" href="/samsung-galaxy-s21-fe-5g-snapdragon-888-lavender-256-gb/p/itmb457a6d3826ee?pid=MOBGSXD7TV34MYXX&amp;otracker=undefined_footer" title="SAMSUNG Galaxy S21 FE 5G">SAMSUNG Galaxy S21 FE 5G</a><a class="_2HvN4k" href="/infinix-hot-30i-diamond-white-64-gb/p/itm8b42a43b35895?otracker=undefined_footer" title="Infinix HOT 30i">Infinix HOT 30i</a><a class="_2HvN4k" href="/realme-10-pro-5g-dark-matter-128-gb/p/itm1e672d12a252e?otracker=undefined_footer" title="Realme 10 Pro 5G">Realme 10 Pro 5G</a><a class="_2HvN4k" href="/motorola-g62-5g-frosted-blue-128-gb/p/itm556a0153d9a10?otracker=undefined_footer" title="MOTOROLA G62 5G">MOTOROLA G62 5G</a><a class="_2HvN4k" href="/nothing-phone-1-black-128-gb/p/itmeea53a564de47?otracker=undefined_footer" title="Nothing Phone">Nothing Phone</a><a class="_2HvN4k" href="/redmi-note-12-pro-5g-onyx-black-128-gb/p/itmbc9fd7adaa32a?otracker=undefined_footer" title="REDMI Note 12 Pro 5G">REDMI Note 12 Pro 5G</a><a class="_2HvN4k" href="/infinix-smart-7-azure-blue-64-gb/p/itm7b72b66485a59?otracker=undefined_footer" title="Infinix SMART 7">Infinix SMART 7</a><a class="_2HvN4k" href="/vivo-y12-burgundy-red-64-gb/p/itmfhyjvucp5mueg?otracker=undefined_footer" title="Vivo Y12">Vivo Y12</a><a class="_2HvN4k" href="/oppo-a12-blue-32-gb/p/itmfc859cdf39e01?otracker=undefined_footer" title="Oppo A12">Oppo A12</a><a class="_2HvN4k" href="/q/motorola-5g-phone?otracker=undefined_footer" title="Motorola 5g Phone">Motorola 5g Phone</a><a class="_2HvN4k" href="/q/realme-5g-smartphone?otracker=undefined_footer" title="Realme 5g Smartphone">Realme 5g Smartphone</a><a class="_2HvN4k" href="/q/apple-5g-phone?otracker=undefined_footer" title="Apple 5g Phone">Apple 5g Phone</a><a class="_2HvN4k" href="/q/iqoo-5g-phones?otracker=undefined_footer" title="Iqoo 5g Phones">Iqoo 5g Phones</a><a class="_2HvN4k" href="/q/oneplus-5g-phones?otracker=undefined_footer" title="Oneplus 5g Phones">Oneplus 5g Phones</a><a class="_2HvN4k" href="/q/vivo-5g-phones?otracker=undefined_footer" title="Vivo 5g Phones">Vivo 5g Phones</a><a class="_2HvN4k" href="/q/oppo-5g-smart-phones?otracker=undefined_footer" title="Oppo 5g Smart Phones">Oppo 5g Smart Phones</a><a class="_2HvN4k" href="/oppo-f15-blazing-blue-128-gb/p/itm56d35565691ea?otracker=undefined_footer" title="Oppo F15">Oppo F15</a><a class="_2HvN4k" href="/oppo-a31-fantasy-white-64-gb/p/itm82e19f459118a?otracker=undefined_footer" title="Oppo A31">Oppo A31</a><a class="_2HvN4k" href="/samsung-galaxy-a71-prism-crush-blue-128-gb/p/itmb719fd01880e3?otracker=undefined_footer" title="Samsung A71">Samsung A71</a><a class="_2HvN4k" href="/samsung-galaxy-a51-prism-crush-blue-128-gb/p/itme8079f0fedb33?otracker=undefined_footer" title="Samsung A51">Samsung A51</a><a class="_2HvN4k" href="/samsung-galaxy-a31-prism-crush-black-128-gb/p/itm629da21d10cba?otracker=undefined_footer" title="Samsung A31">Samsung A31</a><a class="_2HvN4k" href="/apple-iphone-11-black-64-gb/p/itm4e5041ba101fd?otracker=undefined_footer" title="iPhone  11">iPhone  11</a><a class="_2HvN4k" href="/apple-iphone-11-pro-space-grey-64-gb/p/itm7e24c1c560208?otracker=undefined_footer" title="iPhone  11 Pro">iPhone  11 Pro</a><a class="_2HvN4k" href="/4g-mobile-phones-store?otracker=undefined_footer" title="4G Mobile">4G Mobile</a><a class="_2HvN4k" href="/nokia-mobile-phones-store?otracker=undefined_footer" title="Nokia Mobile">Nokia Mobile</a><a class="_2HvN4k" href="/samsung-mobile-store?otracker=undefined_footer" title="Samsung Mobile">Samsung Mobile</a><a class="_2HvN4k" href="/mobiles/apple~brand/pr?sid=tyy,4io&amp;otracker=undefined_footer" title="iphone">iphone</a><a class="_2HvN4k" href="/oppo-mobile-phones-store?otracker=undefined_footer" title="Oppo Mobile">Oppo Mobile</a><a class="_2HvN4k" href="/vivo-mobile-phones-store?otracker=undefined_footer" title="Vivo Mobile">Vivo Mobile</a></div><div class="_3xGbi-"><a href="/cameras" class="idEVeE" title="Camera">Camera</a><a class="_2HvN4k" href="/gopro-hero-sports-action-camera/p/itmf3s4abpfgawhc?otracker=undefined_footer" title="GoPro Action Camera">GoPro Action Camera</a><a class="_2HvN4k" href="/cameras/nikon~brand/pr?sid=jek,p31&amp;otracker=undefined_footer" title="Nikon Camera">Nikon Camera</a><a class="_2HvN4k" href="/cameras/canon~brand/pr?sid=jek,p31&amp;otracker=undefined_footer" title="Canon Camera">Canon Camera</a><a class="_2HvN4k" href="/q/sony-cameras?otracker=undefined_footer" title="Sony Camera">Sony Camera</a><a class="_2HvN4k" href="/q/canon-dslr-cameras?otracker=undefined_footer" title="Canon DSLR">Canon DSLR</a><a class="_2HvN4k" href="/cameras/dslr-mirrorless/nikon~brand/pr?sid=jek,p31,trv&amp;otracker=undefined_footer" title="Nikon DSLR">Nikon DSLR</a></div><div class="_3xGbi-"><a href="/brands/laptops?sid=6bo,b5g" class="idEVeE" title="Laptops">Laptops</a><a class="_2HvN4k" href="/avita-liber-core-i7-10th-gen-16-gb-1-tb-ssd-windows-10-home-ns14a8inr671-pag-thin-light-laptop/p/itmbe8a49652ca6f?pid=COMGQKQ7GGNFR8N4&amp;otracker=undefined_footer" title="Asus ROG Ally">Asus ROG Ally</a><a class="_2HvN4k" href="/apple-2022-macbook-pro-m2-8-gb-256-gb-ssd-mac-os-monterey-mneh3hn-a/p/itmaea892f7dd66e?otracker=undefined_footer" title="MacBook Pro M2">MacBook Pro M2</a><a class="_2HvN4k" href="/q/premium-laptops?otracker=undefined_footer" title="Premium Laptop">Premium Laptop</a><a class="_2HvN4k" href="asus-rog-strix-scar-16-2023-core-i9-13th-gen-32-gb-1-tb-ssd-windows-11-home-12-gb-graphics-nvidia-geforce-rtx-4080-g634jz-n4062ws-gaming-laptop/p/itma62818795454d?otracker=undefined_footer" title="ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen">ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen</a><a class="_2HvN4k" href="/asus-rog-zephyrus-m16-2023-core-i9-13th-gen-32-gb-2-tb-ssd-windows-11-home-16-gb-graphics-nvidia-geforce-rtx-4090-gu604vy-nm058ws-gaming-laptop/p/itm7ad23e5445edf?otracker=undefined_footer" title="ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen">ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen</a><a class="_2HvN4k" href="/asus-zenbook-14-oled-2022-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-ux3402za-km531ws-thin-light-laptop/p/itm92e2e0518b654?otracker=undefined_footer" title="ASUS Zenbook 14 OLED (2022)">ASUS Zenbook 14 OLED (2022)</a><a class="_2HvN4k" href="/realme-book-prime-core-i5-11th-gen-16-gb-512-gb-ssd-windows-11-home-cloudpro002-thin-light-laptop/p/itm7d1b1a9d3579b?otracker=undefined_footer" title="Realme Book Prime Core i5 11th Gen">Realme Book Prime Core i5 11th Gen</a><a class="_2HvN4k" href="/microsoft-surface-go-pentium-gold-8-gb-128-gb-ssd-windows-10-home-s-mode-1824-2-1-laptop/p/itmfb6pyjzy9y8n4?otracker=undefined_footer" title="Microsoft Surface Go Pentium 128GB">Microsoft Surface Go Pentium 128GB</a><a class="_2HvN4k" href="/laptops/apple~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="Apple Laptops">Apple Laptops</a><a class="_2HvN4k" href="/laptops/acer~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="Acer Laptops">Acer Laptops</a><a class="_2HvN4k" href="/laptops/lenovo~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="Lenovo Laptops">Lenovo Laptops</a><a class="_2HvN4k" href="/laptops/dell~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="Dell Laptops">Dell Laptops</a><a class="_2HvN4k" href="/laptops/asus~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="Asus Laptops">Asus Laptops</a><a class="_2HvN4k" href="/laptops/hp~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="HP Laptops">HP Laptops</a><a class="_2HvN4k" href="/gaming-laptops-store?otracker=undefined_footer" title="Gaming Laptops">Gaming Laptops</a><a class="_2HvN4k" href="/laptops/~2-in-1-laptops/pr?sid=6bo,b5g&amp;otracker=undefined_footer" title="2 in 1 Laptops">2 in 1 Laptops</a><a class="_2HvN4k" href="/laptops-store?otracker=undefined_footer" title="Laptops">Laptops</a><a class="_2HvN4k" href="/q/dell-latest-laptops-2022?otracker=undefined_footer" title="Dell latest laptops 2022">Dell latest laptops 2022</a><a class="_2HvN4k" href="/q/hp-latest-laptops-2022?otracker=undefined_footer" title="HP latest laptops 2022">HP latest laptops 2022</a><a class="_2HvN4k" href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined_footer" title="Infinix INBook Y1 Plus">Infinix INBook Y1 Plus</a><a class="_2HvN4k" href="/samsung-galaxy-book3-core-i7-13th-gen-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf5efb3b1c35fa?otracker=undefined_footer" title="SAMSUNG Galaxy Book3">SAMSUNG Galaxy Book3</a><a class="_2HvN4k" href="/q/12th-gen-intel-core-laptops?otracker=undefined_footer" title="12th Gen Intel Core Laptops">12th Gen Intel Core Laptops</a></div><div class="_3xGbi-"><a href="/televisions" class="idEVeE" title="TVs">TVs</a><a class="_2HvN4k" href="/televisions/nokia~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Nokia TV">Nokia TV</a><a class="_2HvN4k" href="/televisions/panasonic~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Panasonic TV">Panasonic TV</a><a class="_2HvN4k" href="/televisions/thomson~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Thomson TV">Thomson TV</a><a class="_2HvN4k" href="/mi-x-pro-108-cm-43-inch-ultra-hd-4k-led-smart-google-tv-dolby-atmos-vision-iq/p/itmccb958ce6c75e?otracker=undefined_footer" title="Mi X Pro">Mi X Pro</a><a class="_2HvN4k" href="/televisions/realme~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Realme TV">Realme TV</a><a class="_2HvN4k" href="/televisions/motorola~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Motorola TV">Motorola TV</a><a class="_2HvN4k" href="/televisions/oneplus~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="OnePlus TVs">OnePlus TVs</a><a class="_2HvN4k" href="/televisions/lg~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="LG TV">LG TV</a><a class="_2HvN4k" href="/television-store?otracker=undefined_footer" title="TV">TV</a><a class="_2HvN4k" href="/televisions/sony~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Sony TV">Sony TV</a><a class="_2HvN4k" href="/televisions/samsung~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Samsung TV">Samsung TV</a><a class="_2HvN4k" href="/televisions/~android-tvs/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Android Television">Android Television</a><a class="_2HvN4k" href="/televisions/iffalcon~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Iffalcon Tv">Iffalcon Tv</a><a class="_2HvN4k" href="/televisions/mi~brand/pr?sid=ckf,czl&amp;otracker=undefined_footer" title="Mi TV">Mi TV</a></div><div class="_3xGbi-"><span class="idEVeE">Large Appliances:</span><a class="_2HvN4k" href="/television-store?otracker=undefined_footer" title="Television">Television</a><a class="_2HvN4k" href="/washing-machines/pr?sid=j9e,abm,8qx&amp;otracker=undefined_footer" title="Washing Machines">Washing Machines</a><a class="_2HvN4k" href="/refrigerators/pr?sid=j9e,abm,hzg&amp;otracker=undefined_footer" title="Refrigerators">Refrigerators</a><a class="_2HvN4k" href="/air-conditioners/pr?sid=j9e,abm,c54&amp;otracker=undefined_footer" title="Air Conditioners">Air Conditioners</a><a class="_2HvN4k" href="/electric-cookers/pr?sid=j9e,m38,9m9&amp;otracker=undefined_footer" title="Electric Cookers">Electric Cookers</a><a class="_2HvN4k" href="/electric-jugheatertravel-kettles/pr?sid=j9e,m38,xrv&amp;otracker=undefined_footer" title="Electric Jug(Heater) / Travel Kettles">Electric Jug(Heater) / Travel Kettles</a><a class="_2HvN4k" href="/induction-cooktops/pr?sid=j9e,m38,575&amp;otracker=undefined_footer" title="Induction Cooktops">Induction Cooktops</a><a class="_2HvN4k" href="/inverters/pr?sid=j9e,abm,7no&amp;otracker=undefined_footer" title="Inverters / stabilizer">Inverters / stabilizer</a><a class="_2HvN4k" href="/iron/pr?sid=j9e,abm,a0u&amp;otracker=undefined_footer" title="Irons / Iron Box">Irons / Iron Box</a><a class="_2HvN4k" href="/mixerjuicergrinders/pr?sid=j9e,m38,7ek&amp;otracker=undefined_footer" title="Mixer Grinder Juicer">Mixer Grinder Juicer</a><a class="_2HvN4k" href="/wet-grinders/pr?sid=j9e,m38,htd&amp;otracker=undefined_footer" title="Wet Grinders">Wet Grinders</a><a class="_2HvN4k" href="/chimney/pr?sid=j9e,m38,tgz&amp;otracker=undefined_footer" title="Chimneys">Chimneys</a><a class="_2HvN4k" href="/microwave-ovens/pr?sid=j9e,m38,o49&amp;otracker=undefined_footer" title="Microwave Ovens">Microwave Ovens</a><a class="_2HvN4k" href="/vacuum-cleaners/pr?sid=j9e,abm,ul2&amp;otracker=undefined_footer" title="Vacuum Cleaners">Vacuum Cleaners</a><a class="_2HvN4k" href="/water-purifiers/pr?sid=j9e,abm,i45&amp;otracker=undefined_footer" title="Water Purifier">Water Purifier</a><a class="_2HvN4k" href="/fans/pr?sid=j9e,abm,lbz&amp;otracker=undefined_footer" title="Fan">Fan</a></div><div class="_3xGbi-"><a href="/clothing" class="idEVeE" title="Clothing">Clothing</a><a class="_2HvN4k" href="/q/green-bridal-lehenga?otracker=undefined_footer" title="Green bridal lehenga">Green bridal lehenga</a><a class="_2HvN4k" href="/womens-tops/pr?sid=clo,ash,ohw,36j&amp;otracker=undefined_footer" title="Tops">Tops</a><a class="_2HvN4k" href="/mens-footwear/pr?sid=osp,cil&amp;otracker=undefined_footer" title="Shoes">Shoes</a><a class="_2HvN4k" href="/sunglasses/pr?sid=26x&amp;otracker=undefined_footer" title="Sunglasses">Sunglasses</a><a class="_2HvN4k" href="/q/bridal-blouse?otracker=undefined_footer" title="Bridal Blouse">Bridal Blouse</a><a class="_2HvN4k" href="/q/half-saree-blouse-designs?otracker=undefined_footer" title="Half saree blouse designs">Half saree blouse designs</a><a class="_2HvN4k" href="/q/designer-blouses?otracker=undefined_footer" title="Designer blouses">Designer blouses</a><a class="_2HvN4k" href="/q/blouse-designs?otracker=undefined_footer" title="Blouse designs">Blouse designs</a><a class="_2HvN4k" href="/mens-shirts/pr?sid=clo%2Cash%2Caxc%2Cmmk&amp;otracker=undefined_footer" title="Shirts">Shirts</a><a class="_2HvN4k" href="/q/cotton-saree-blouse-designs?otracker=undefined_footer" title="Cotton saree blouse designs">Cotton saree blouse designs</a><a class="_2HvN4k" href="/mens-tshirts/pr?sid=clo%2Cash%2Cank%2Cedy&amp;otracker=undefined_footer" title="Tshirts">Tshirts</a><a class="_2HvN4k" href="/mens-jeans/pr?sid=clo%2Cvua%2Ck58%2Ci51&amp;otracker=undefined_footer" title="Jeans">Jeans</a><a class="_2HvN4k" href="/womens-sarees/pr?sid=clo%2C8on%2Czpd%2C9og&amp;otracker=undefined_footer" title="Sarees">Sarees</a><a class="_2HvN4k" href="/womens-dresses/pr?sid=clo%2Codx%2Cmaj%2Cjhy&amp;otracker=undefined_footer" title="Dresses">Dresses</a><a class="_2HvN4k" href="/q/one-pieces?otracker=undefined_footer" title="One pieces">One pieces</a><a class="_2HvN4k" href="/q/groom-wedding-sherwani?otracker=undefined_footer" title="Groom wedding sherwani">Groom wedding sherwani</a><a class="_2HvN4k" href="/q/designer-salwar-suits?otracker=undefined_footer" title="Designer Salwar Suits">Designer Salwar Suits</a><a class="_2HvN4k" href="/bras/pr?sid=clo%2Cqfl%2Cv5v%2Ckzg&amp;otracker=undefined_footer" title="Bra">Bra</a><a class="_2HvN4k" href="/q/cotton-simple-blouse-designs?otracker=undefined_footer" title="Cotton simple blouse designs">Cotton simple blouse designs</a><a class="_2HvN4k" href="/q/banarasi-saree-blouse-designs?otracker=undefined_footer" title="Banarasi saree blouse designs">Banarasi saree blouse designs</a><a class="_2HvN4k" href="/q/stylish-blouse-astin-design?otracker=undefined_footer" title="Stylish blouse astin design">Stylish blouse astin design</a><a class="_2HvN4k" href="/mens-track-pants/pr?sid=clo%2Cvua%2Cjlk%2C6ql&amp;otracker=undefined_footer" title="Track Pant">Track Pant</a><a class="_2HvN4k" href="/q/blouse-neck-designs?otracker=undefined_footer" title="Blouse neck designs">Blouse neck designs</a><a class="_2HvN4k" href="/q/kurtas?otracker=undefined_footer" title="Kurtas">Kurtas</a><a class="_2HvN4k" href="/womens-dresses/party~occasion/pr?sid=clo%2Codx%2Cmaj%2Cjhy&amp;otracker=undefined_footer" title="Party Dresses">Party Dresses</a><a class="_2HvN4k" href="/womens-ethnic-sets/kurta-and-palazzo-set~type/pr?sid=clo%2Ccfv%2Citg%2Ctys&amp;otracker=undefined_footer" title="Palazzo Suits">Palazzo Suits</a><a class="_2HvN4k" href="/q/anarkali?otracker=undefined_footer" title="Anarkali">Anarkali</a><a class="_2HvN4k" href="/womens-gowns/pr?sid=clo%2Codx%2Cod7%2C0xx&amp;otracker=undefined_footer" title="Gowns">Gowns</a><a class="_2HvN4k" href="/q/cut-out-dress?otracker=undefined_footer" title="Cut out dress">Cut out dress</a><a class="_2HvN4k" href="/q/salwar-suit?otracker=undefined_footer" title="Salwar Suits">Salwar Suits</a><a class="_2HvN4k" href="/womens-kurtas-kurtis/pr?sid=clo%2Ccfv%2Ccib%2Crkt&amp;otracker=undefined_footer" title="Kurtis">Kurtis</a><a class="_2HvN4k" href="/q/designer-sarees?otracker=undefined_footer" title="Designer Sarees">Designer Sarees</a><a class="_2HvN4k" href="/q/leggings?otracker=undefined_footer" title="Leggings">Leggings</a><a class="_2HvN4k" href="/mens-shorts/pr?sid=clo%2Cvua%2Ce8g%2Ckc7&amp;otracker=undefined_footer" title="Shorts">Shorts</a><a class="_2HvN4k" href="/q/georgette-sarees?otracker=undefined_footer" title="Georgette Sarees">Georgette Sarees</a><a class="_2HvN4k" href="/q/ethnic-wear?otracker=undefined_footer" title="Ethnic Wear">Ethnic Wear</a><a class="_2HvN4k" href="/q/uppada-pattu-sarees?otracker=undefined_footer" title="uppada pattu sarees">uppada pattu sarees</a><a class="_2HvN4k" href="/q/blouse-back-design?otracker=undefined_footer" title="Blouse back design">Blouse back design</a><a class="_2HvN4k" href="/q/jodhpur-pants?otracker=undefined_footer" title="Jodhpur pants">Jodhpur pants</a></div><div class="_3xGbi-"><span class="idEVeE">Footwear:</span><a class="_2HvN4k" href="/mens-footwear/sports-shoes/adidas~brand/pr?sid=osp,cil,1cu&amp;otracker=undefined_footer" title="Adidas Shoes">Adidas Shoes</a><a class="_2HvN4k" href="/mens-footwear/reebok~brand/pr?sid=osp,cil&amp;otracker=undefined_footer" title="Reebok Shoes">Reebok Shoes</a><a class="_2HvN4k" href="/mens-footwear/nike~brand/pr?sid=osp,cil&amp;otracker=undefined_footer" title="Nike Shoes">Nike Shoes</a><a class="_2HvN4k" href="/mens-footwear/puma~brand/pr?sid=osp,cil&amp;otracker=undefined_footer" title="Puma Shoes">Puma Shoes</a><a class="_2HvN4k" href="/mens-footwear/casual-shoes/boots~type/pr?sid=osp,cil,e1f&amp;otracker=undefined_footer" title="Boots">Boots</a><a class="_2HvN4k" href="/q/bata-shoes?otracker=undefined_footer" title="Bata Shoes">Bata Shoes</a><a class="_2HvN4k" href="/q/woodland-shoes?otracker=undefined_footer" title="Woodland Shoes">Woodland Shoes</a><a class="_2HvN4k" href="/mens-footwear/skechers~brand/pr?sid=osp,cil&amp;otracker=undefined_footer" title="Skechers Shoes">Skechers Shoes</a><a class="_2HvN4k" href="/mens-footwear/casual-shoes/sneakers~type/pr?sid=osp%2Ccil%2Ce1f&amp;otracker=undefined_footer" title="Sneakers">Sneakers</a><a class="_2HvN4k" href="/womens-footwear/boots/pr?sid=osp,iko,xgp&amp;otracker=undefined_footer" title="Womens Boots">Womens Boots</a><a class="_2HvN4k" href="/mens-footwear/sports-shoes/pr?sid=osp%2Ccil%2C1cu&amp;otracker=undefined_footer" title="Sports Shoes">Sports Shoes</a><a class="_2HvN4k" href="/mens-footwear/casual-shoes/loafers~type/pr?sid=osp%2Ccil%2Ce1f&amp;otracker=undefined_footer" title="Loafers">Loafers</a><a class="_2HvN4k" href="/mens-footwear/sandals-floaters/pr?sid=osp%2Ccil%2Ce83&amp;otracker=undefined_footer" title="Sandals">Sandals</a><a class="_2HvN4k" href="/mens-footwear/sports-shoes/lotto~brand/pr?sid=osp%2Ccil%2C1cu&amp;otracker=undefined_footer" title="Lotto Sports Shoes">Lotto Sports Shoes</a><a class="_2HvN4k" href="/mens-footwear/casual-shoes/pr?sid=osp,cil,e1f&amp;otracker=undefined_footer" title="Casual Shoes">Casual Shoes</a><a class="_2HvN4k" href="/womens-footwear/skechers~brand/pr?sid=osp,iko&amp;otracker=undefined_footer" title="Womens Skechers Shoes">Womens Skechers Shoes</a><a class="_2HvN4k" href="/mens-footwear/sports-shoes/asics~brand/pr?sid=osp%2Ccil%2C1cu&amp;otracker=undefined_footer" title="Asics Sports Shoes">Asics Sports Shoes</a><a class="_2HvN4k" href="/mens-footwear/formal-shoes/pr?sid=osp,cil,ssb&amp;otracker=undefined_footer" title="Formal Shoes">Formal Shoes</a><a class="_2HvN4k" href="/q/school-shoes?otracker=undefined_footer" title="School Shoes">School Shoes</a></div><div class="_3xGbi-"><a href="/grocery-supermart-store?marketplace=GROCERY" class="idEVeE" title="Groceries">Groceries</a><a class="_2HvN4k" href="/redeem-flipkart-grocery-coupon-voucher-phonepe-store?marketplace=GROCERY&amp;otracker=undefined_footer" title="PhonePe Grocery Voucher">PhonePe Grocery Voucher</a><a class="_2HvN4k" href="/grocery/personal-baby-care/soaps-body-wash/hand-wash/pr?sid=73z%2Cnjl%2Csn6%2C6vr&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Hand Wash">Hand Wash</a><a class="_2HvN4k" href="/grocery/personal-baby-care/soaps-body-wash/soaps/pr?sid=73z%2Cnjl%2Csn6%2Cr6y&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Soap">Soap</a><a class="_2HvN4k" href="/grocery/staples/dry-fruits-nuts-seeds/cashew-nuts/pr?sid=73z%2Cbpe%2Cdtp%2Cghn&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Cashew Nuts">Cashew Nuts</a><a class="_2HvN4k" href="/grocery/staples/ghee-oils/sunflower-oil/pr?sid=73z,bpe,4wu,4vo&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Sunflower Oil">Sunflower Oil</a><a class="_2HvN4k" href="/grocery/dairy-eggs/eggs/pr?sid=73z%2Cesa%2Chh7&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Eggs">Eggs</a><a class="_2HvN4k" href="/grocery/household-care/floor-other-cleaners/toilet-cleaners/pr?sid=73z,cwl,u3c,ijq&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Toilet Cleaner">Toilet Cleaner</a><a class="_2HvN4k" href="/grocery/household-care/floor-other-cleaners/toilet-cleaners/harpic~brand/pr?sid=73z%2Ccwl%2Cu3c%2Cijq&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Harpic Toilet Cleaner">Harpic Toilet Cleaner</a><a class="_2HvN4k" href="/grocery/personal-baby-care/soaps-body-wash/soaps/dettol~brand/pr?sid=73z,njl,sn6,r6y&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Dettol Soap">Dettol Soap</a><a class="_2HvN4k" href="/grocery/staples/ghee-oils/mustard-oil/pr?sid=73z%2Cbpe%2C4wu%2Ctmu&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Mustard Oil">Mustard Oil</a><a class="_2HvN4k" href="/grocery/snacks-beverages/biscuits/pr?sid=73z%2Cujs%2Ceb9&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Biscuits">Biscuits</a><a class="_2HvN4k" href="/grocery/dairy-eggs/dairy/cheese/pr?sid=73z%2Cesa%2Cdt6%2C4ku&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Cheese">Cheese</a><a class="_2HvN4k" href="/grocery/staples/atta-flours/wheat-atta/patanjali~brand/pr?sid=73z%2Cbpe%2C9da%2C1fd&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Patanjali Atta">Patanjali Atta</a><a class="_2HvN4k" href="/grocery/staples/ghee-oils/sunflower-oil/fortune~brand/pr?sid=73z,bpe,4wu,4vo&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Fortune Oil">Fortune Oil</a><a class="_2HvN4k" href="/grocery/staples/atta-flours/wheat-atta/aashirvaad~brand/pr?sid=73z%2Cbpe%2C9da%2C1fd&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Aashirvaad Atta">Aashirvaad Atta</a><a class="_2HvN4k" href="/grocery/snacks-beverages/tea/pr?sid=73z%2Cujs%2Camr&amp;marketplace=GROCERY&amp;otracker=undefined_footer" title="Tea">Tea</a></div><div class="_3xGbi-"><a href="/" class="idEVeE" title="Best Selling on Flipkart">Best Selling on Flipkart</a><a class="_2HvN4k" href="/headphones-store?otracker=undefined_footer" title="Headphones">Headphones</a><a class="_2HvN4k" href="/q/best-gas-geyser?otracker=undefined_footer" title="Best Gas Geyser">Best Gas Geyser</a><a class="_2HvN4k" href="/q/kitchen-geyser?otracker=undefined_footer" title="Kitchen Geyser">Kitchen Geyser</a><a class="_2HvN4k" href="/q/nutri-blenders?otracker=undefined_footer" title="Nutri Blenders">Nutri Blenders</a><a class="_2HvN4k" href="/q/portable-air-cooler?otracker=undefined_footer" title="Portable Air Cooler">Portable Air Cooler</a><a class="_2HvN4k" href="/q/best-air-cooler?otracker=undefined_footer" title="Best Air Cooler">Best Air Cooler</a><a class="_2HvN4k" href="/bags-online-store?otracker=undefined_footer" title="Bags">Bags</a><a class="_2HvN4k" href="/q/hitachi-refrigerator-3-door?otracker=undefined_footer" title="Hitachi Refrigerator 3 Door">Hitachi Refrigerator 3 Door</a><a class="_2HvN4k" href="/books-store?otracker=undefined_footer" title="Books">Books</a><a class="_2HvN4k" href="/toys-online-store?otracker=undefined_footer" title="Toys">Toys</a><a class="_2HvN4k" href="/home-decor/diyas-candles-holders/candles/pr?sid=arb,mvm,p0s&amp;otracker=undefined_footer" title="Candles">Candles</a><a class="_2HvN4k" href="/automotive/car-bike-accessories/helmets-riding-gear/helmets-locks/helmets/pr?sid=0hx,bwd,bgt,c0x,wnn&amp;otracker=undefined_footer" title="Helmets">Helmets</a><a class="_2HvN4k" href="/home-decor/clocks/wall-clocks/pr?sid=arb,kjw,bm1&amp;otracker=undefined_footer" title="Wall Clocks">Wall Clocks</a><a class="_2HvN4k" href="/baby-care/baby-food/pr?sid=kyh,arw&amp;otracker=undefined_footer" title="Baby Food">Baby Food</a><a class="_2HvN4k" href="/food-nutrition/confectioneries-sweets/chocolates/pr?sid=7jv,iyp,s4n&amp;otracker=undefined_footer" title="Chocolates">Chocolates</a><a class="_2HvN4k" href="/sports/cycling/cycles/pr?sid=abc,ulv,ixt&amp;otracker=undefined_footer" title="Cycles">Cycles</a><a class="_2HvN4k" href="/pens-stationery/calculators/pr?sid=dgv,qtq&amp;otracker=undefined_footer" title="Calculators">Calculators</a><a class="_2HvN4k" href="/beauty-and-grooming/makeup/lips/lipstick/pr?sid=g9b,ffi,tv5,una&amp;otracker=undefined_footer" title="Lipsticks">Lipsticks</a><a class="_2HvN4k" href="/health-care/home-medical-supplies/health-monitors/pollution-masks/pr?sid=hlc%2C20m%2Cled%2Cdew&amp;otracker=undefined_footer" title="Mask">Mask</a><a class="_2HvN4k" href="/laptop-accessories/ups/pr?sid=6bo%2Cai3%2Cpi1&amp;otracker=undefined_footer" title="Vertiv UPS">Vertiv UPS</a><a class="_2HvN4k" href="/watches/fastrack~brand/pr?sid=r18&amp;otracker=undefined_footer" title="Fastrack Watches">Fastrack Watches</a><a class="_2HvN4k" href="/bags-wallets-belts/wallets-clutches/wallets/pr?sid=reh%2Ccca%2Ch76&amp;otracker=undefined_footer" title="Wallets">Wallets</a><a class="_2HvN4k" href="/earrings/pr?sid=mcr,96v,k9d&amp;otracker=undefined_footer" title="Earrings">Earrings</a><a class="_2HvN4k" href="/jewellery/~gold-coins/pr?sid=mcr&amp;otracker=undefined_footer" title="Gold Coins">Gold Coins</a><a class="_2HvN4k" href="/realme-pad-mini-3-gb-ram-32-rom-8-68-inch-4g-tablet-grey/p/itmdb6b41e4b36ef?otracker=undefined_footer" title="Realme Pad Mini">Realme Pad Mini</a><a class="_2HvN4k" href="/handbags/pr?sid=reh,ihu,m08&amp;otracker=undefined_footer" title="Handbags">Handbags</a><a class="_2HvN4k" href="/conekt-sw2-smartwatch/p/itmaa5781a80aec1?otracker=undefined_footer" title="conekt SW2 Smartwatch">conekt SW2 Smartwatch</a><a class="_2HvN4k" href="/q/mivi-duopods-a350?otracker=undefined_footer" title="Mivi DuoPods a350">Mivi DuoPods a350</a><a class="_2HvN4k" href="/q/mobile-speaker-cleaner?otracker=undefined_footer" title="Speaker Cleaner">Speaker Cleaner</a></div><div class="_3xGbi-"><a href="/furniture/pr?sid=wwe" class="idEVeE" title="Furniture">Furniture</a><a class="_2HvN4k" href="/furniture-store?otracker=undefined_footer" title="Furniture">Furniture</a><a class="_2HvN4k" href="/furniture/sofas/sofa-sets/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer" title="Sofas">Sofas</a><a class="_2HvN4k" href="/furniture/beds/pr?sid=wwe,7p7&amp;otracker=undefined_footer" title="Beds">Beds</a><a class="_2HvN4k" href="/furniture/dining-tables-sets/pr?sid=wwe,ur9&amp;otracker=undefined_footer" title="Dining sets">Dining sets</a><a class="_2HvN4k" href="/furniture/wardrobes/pr?sid=wwe,fc3&amp;otracker=undefined_footer" title="Wardrobes">Wardrobes</a><a class="_2HvN4k" href="/furniture/mattresses/pr?sid=wwe,rg9&amp;otracker=undefined_footer" title="Mattresses">Mattresses</a><a class="_2HvN4k" href="/furniture/tv-units-cabinets/pr?sid=wwe,243&amp;otracker=undefined_footer" title="TV Units">TV Units</a><a class="_2HvN4k" href="/furniture/tables/pr?sid=wwe,ki7&amp;otracker=undefined_footer" title="Tables">Tables</a><a class="_2HvN4k" href="/furniture/chairs/pr?sid=wwe,y7b&amp;otracker=undefined_footer" title="Chairs">Chairs</a><a class="_2HvN4k" href="/furniture/shelves/pr?sid=wwe,vmc&amp;otracker=undefined_footer" title="Shelves">Shelves</a><a class="_2HvN4k" href="/furniture/bean-bags/pr?sid=wwe,4n6&amp;otracker=undefined_footer" title="Bean Bags">Bean Bags</a><a class="_2HvN4k" href="/furniture/chairs/office-study-chairs/pr?sid=wwe,y7b,foc&amp;otracker=undefined_footer" title="Office Chairs">Office Chairs</a><a class="_2HvN4k" href="/q/computer-tables?otracker=undefined_footer" title="Computer Table">Computer Table</a><a class="_2HvN4k" href="/furniture/tables/office-study-table/pr?sid=wwe,ki7,l1t&amp;otracker=undefined_footer" title="Office Tables">Office Tables</a><a class="_2HvN4k" href="/furniture/sofas/sofa-sets/red~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer" title="Red Sofa">Red Sofa</a><a class="_2HvN4k" href="/furniture/beds/beds/wakefit~brand/pr?sid=wwe,7p7,4yf&amp;otracker=undefined_footer" title="Wakefit Beds">Wakefit Beds</a><a class="_2HvN4k" href="/furniture/sofas/sofa-sets/white~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer" title="White Sofa">White Sofa</a><a class="_2HvN4k" href="/furniture/mattresses/wakefit~brand/pr?sid=wwe%2Crg9&amp;otracker=undefined_footer" title="Wakefit Mattress">Wakefit Mattress</a><a class="_2HvN4k" href="/furniture/sofas/sofa-sets/green~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer" title="Green Sofa">Green Sofa</a><a class="_2HvN4k" href="/furniture/sofas/sofa-sets/black~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer" title="Black Sofa">Black Sofa</a><a class="_2HvN4k" href="/furniture/sofas/sofa-sets/brown~primary-color/pr?sid=wwe,c3z,r0c&amp;otracker=undefined_footer" title="Brown Sofa">Brown Sofa</a></div><div class="_3xGbi-"><span class="idEVeE">BGMH:</span><a class="_2HvN4k" href="/health-care/health-supplements/protein-supplement/whey-protein~type/pr?sid=hlc%2Cetg%2C1rx&amp;otracker=undefined_footer" title="Whey Protein">Whey Protein</a><a class="_2HvN4k" href="https://www.flipkart.com/health-care/home-medicines/general-wellness/homeopathy/pr?sid=hlc%2Cah4%2Ciav%2Craa&amp;otracker=undefined_footer" title="Homeopathy">Homeopathy</a><a class="_2HvN4k" href="/sports/cricket/pr?sid=abc,5lf&amp;otracker=undefined_footer" title="Cricket">Cricket</a><a class="_2HvN4k" href="/sports/cycling/cycles/pr?sid=abc,ulv,ixt&amp;otracker=undefined_footer" title="Cycles">Cycles</a><a class="_2HvN4k" href="/sports/football/footballs/pr?sid=abc%2Cgxg%2Ceha&amp;otracker=undefined_footer" title="Footballs">Footballs</a><a class="_2HvN4k" href="/exercise-fitness/fitness-equipment/treadmills/pr?sid=qoc,amf,oyq&amp;otracker=undefined_footer" title="Treadmills">Treadmills</a><a class="_2HvN4k" href="/q/christmas-gift?otracker=undefined_footer" title="Christmas Gifts">Christmas Gifts</a><a class="_2HvN4k" href="/exercise-fitness/fitness-accessories/pr?sid=qoc,acb&amp;otracker=undefined_footer" title="Fitness Accessories">Fitness Accessories</a><a class="_2HvN4k" href="/q/online-guitar?otracker=undefined_footer" title="Online Guitar">Online Guitar</a><a class="_2HvN4k" href="/books-store?otracker=undefined_footer" title="Books Store">Books Store</a><a class="_2HvN4k" href="/musical-instruments-store?otracker=undefined_footer" title="Musical Instrument Store">Musical Instrument Store</a><a class="_2HvN4k" href="/q/dabur-chyawanprash?otracker=undefined_footer" title="Dabur Chyawanprash">Dabur Chyawanprash</a><a class="_2HvN4k" href="/q/baidyanath-chyawanprash?otracker=undefined_footer" title="Baidyanath Chyawanprash">Baidyanath Chyawanprash</a><a class="_2HvN4k" href="/health-care/health-supplements/energy-drinks/pr?sid=hlc,etg,2yn&amp;otracker=undefined_footer" title="Energy Drinks">Energy Drinks</a><a class="_2HvN4k" href="/toys-online-store?otracker=undefined_footer" title="Toys">Toys</a><a class="_2HvN4k" href="/health-care/health-supplements/milk-drink-mixes/pr?sid=hlc,etg,sxm&amp;otracker=undefined_footer" title="Milk Drink Mixes">Milk Drink Mixes</a><a class="_2HvN4k" href="/q/rakhi?otracker=undefined_footer" title="Rakhi">Rakhi</a><a class="_2HvN4k" href="/q/chyawanprash?otracker=undefined_footer" title="Chyawanprash">Chyawanprash</a><a class="_2HvN4k" href="/home-decor/showpieces-decor-accents/flags/pr?sid=arb%2Cuj2%2Cuvt&amp;otracker=undefined_footer" title="Indian Flag">Indian Flag</a><a class="_2HvN4k" href="/health-care/health-supplements/protein-supplement/pr?sid=hlc,etg,1rx&amp;otracker=undefined_footer" title="Protein Supplements">Protein Supplements</a></div></div>
+
+            <div class="story2">
+              <div class="_1o2Zk0"><div><h1>Flipkart: The One-stop Shopping Destination</h1>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. <br><br>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. <br><br><h2>Flipkart Plus</h2>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! <br><br>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>An annual Zomato Gold membership<br>An annual Hotstar Premium membership<br>6 months Gaana plus subscription<br>Rupees 550 instant discount on flights on ixigo<br>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.<br><br><h2>No Cost EMI</h2>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.<br><br> <h2>EMI on Debit Cards</h2>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. <br><br><h2>Mobile Exchange Offers</h2>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. <br><br><h2>What Can You Buy From Flipkart?</h2><h2>Mobile Phones</h2>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - <b>the Flipkart Complete Mobile Protection</b> covers a comprehensive range of post-purchase problems, with door-to-door services. <br><br><h2>Electronic Devices and Accessories</h2>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our <b>Back To College Store</b> segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.<br><br>Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. <br><br>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.<br><br>How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.<br><br><h2>Large Appliances</h2>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our <b>Dependable TV and Appliance Store</b> ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.<br><br>For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to <a href="mailto:Purchases.oni@flipkart.com">Purchases.oni@flipkart.com</a>. <br><br><h2>Small Home Appliances</h2>Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.<br><br><h2>Lifestyle</h2>Flipkart, <b>'India ka Fashion Capital'</b>, is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.<br><br><h2>Home and Furniture</h2>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our <b>Durability Certified Furniture Store</b> has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. <b>Be FurniSure</b>, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes. <br><br>You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart. <br><br><h2>Baby and Kids</h2>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted names in the business for your baby.<br><br><h2>Books, Sports and Games</h2>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving. <br><br><h2>Grocery/Supermart</h2>Launching into the grocery vertical, Flipkart introduces <b>Supermart</b> that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our <b>1 Rupee Store</b> presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.</div></div>
+            </div>
+          </div>
+          <div class="ft-dark bg-dark">
+            <div class="ft-dark-cont d-flex justify-content-between flex-sm-column p-sm- flex-lg-row flex-lg-row">
+              <div class="cont1 d-flex justify-content-between">
+                <div class="cont1-1 me-md-5 me-sm-5">
+                  <span>ABOUT</span><br>
+                  <a href="">Contact Us</a><br>
+                  <a href="">About Us</a><br>
+                  <a href="">Careers</a><br>
+                  <a href="">Flipkart Stories</a><br>
+                  <a href="">Press</a><br>
+                  <a href="">Corporate</a><br>
+                  <a href="">information</a>
+                </div>
+                <div class="cont1-2 me-md-5 me-sm-5">
+                  <span>GROUP COMPANIES</span><br>
+                  <a href="">Myntra</a><br>
+                  <a href="">Flipkart Wholesale</a><br>
+                  <a href="">Cleartrip</a><br>
+                  <a href="">Shopsy</a><br>
+                </div>
+                <div class="cont1-3 me-md-5 me-sm-5">
+                  <span>HELP</span><br>
+                  <a href="">Payments</a><br>
+                  <a href="">Shipping</a><br>
+                  <a href="">Cancellation &<br> Returns</a><br>
+                  <a href="">FAQ</a><br>
+                  <a href="">Report infrigement</a>
+                </div>
+                <div class="cont1-4 ms-md-5">
+                  <span>CONSUMER POLICY</span><br>
+                  <a href="">Cancellation & Returns</a><br>
+                  <a href="">Terms of use</a><br>
+                  <a href="">Security</a><br>
+                  <a href="">Privacy</a><br>
+                  <a href="">Sitemap</a><br>
+                  <a href="">Grievance Redressal</a><br>
+                  <a href="">EPR Complliance</a>
+                </div>
+              </div>
+              <div class="cont2 d-flex justify-content-between d-sm-none d-lg-flex">
+                <div class="cont2-1">
+                  <span>Mail Us:</span><br>
+                  <p>
+                    flipkart internet private limited,<br>
+                    Building Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                    Outer Ring Road, Devarrbensanhalli Village, <br>
+                    Bengaluru, 5610103, Karnataka India <br>
+                    <span>Social:</span> <br>
+                    <i class="fa-brands fa-instagram fa-1x"></i>
+                    <i class="fa-brands fa-twitter fa-1x m-2"></i>
+                    <i class="fa-brands fa-youtube fa-1x mr-2"></i>
+                  </p>
+                </div>
+                <div class="cont2-2">
+                  <span>Registered Office Address:</span><br>
+                  <p>
+                    flipkart internet private limited,<br>
+                    Building Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                    Outer Ring Road, Devarrbensanhalli Village, <br>
+                    Bengaluru, 5610103, Karnataka India <br>
+                    CIN:U51109KA2012PTC066107 <br>
+                    Telephone:<a href="" class="primary">044-45514700</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>  
+</body>
+</html>

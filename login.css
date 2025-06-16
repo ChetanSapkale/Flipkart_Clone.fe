@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: #ddd;
+}
+a{
+    text-decoration: none;
+}
+/* nav styling */
+header{
+    z-index: 999;
+    padding: 0;
+}
+header nav{
+    padding: 20px 20px;
+    width: 90%;
+}
+header nav input{
+    padding:0 16px;
+    border: none;
+    outline: none;
+    height: 36px;
+    width: 450px;
+}
+header nav span a{
+    color: white;
+}
+header nav ul span:nth-child(2) a{
+    background-color:white;
+    padding: 5px 40px;
+    color: blue;
+}
+
+header nav ul li:nth-child(2):hover .login-info-child{
+ display:block;
+}
+.login-info-child span a{
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+}
+ul .tp-nav a{
+    color: black;
+}
+ul .tp-nav{
+    box-shadow: 2px 2px 2px rgba(60, 56, 56, 0.701);
+}
+#outer{
+    top: 93px;
+}
+/* form styling */
+form{
+    height: 528px;
+    width: 840px;
+}
+
+.form-1{
+    height: 528px;
+    width: 336px;
+    padding: 40px 33px;
+}
+.form-1 p{
+    color: #dbdbdb;
+    font-size: 18px;
+}
+.form-2{
+    width: 504px;
+    height: 528px;
+    padding: 56px 35px 16px 35px;
+    position: relative;
+}
+#nError{
+    position: absolute;
+    top: 80px;
+    font-size: 12px;
+    color: red;
+}
+.form-2 span:nth-child(3){
+    position: absolute;
+    top: 52px;
+    color: #aaa;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.form-2 input{
+    border: none;
+    border-bottom:2px solid grey;
+    width: 434px;
+    outline: none;
+    margin-bottom: 50px;
+}
+.form-2 button{
+    background-color:#fb641b;
+    width: 434px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size:15px;
+}
+.form-2 a{
+    bottom: 10px;
+    left: 25%;
+}
+/* main styling */
+main{
+    padding: 150px 8px 0px 8px;
+}
+
+main p{
+    font-size: 12px;
+    color: #878787;
+}
+.mb-ps-1{
+    height: 313px;
+}
+.mb-ps-2{
+    height: 107px;
+}
+.mb-ps-3,.mb-ps-4{
+    height: 280px;
+}
+.posters{
+    height: 280px;
+}
+.realme-ph h2{
+    padding: 15px 20px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+.phone-box{
+    width: 220px;
+    height: 100%;
+    padding:16px;
+}
+.phone-box img{
+    width: 80%;
+    height:80%;    
+    object-fit: cover;
+    object-position: center;
+}
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* footer styling */
+footer.lg-ft{
+    padding: 0 25px;
+}
+footer table{
+    width:50%;
+    height: 68px;
+}
+/* mb- About styling */
+.mb-about-parent{
+    padding: 150px 16px 16px 16px;
+}
+.mb-about-parent button{
+    display: inline-block;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin: auto;
+}
+.mb-btns{
+    position: absolute;
+    top: 98%;
+    left: 8%;
+}
+.mb-btns button{
+    padding: 18px 8px;
+    width: 200px;
+    text-align: center;
+}
+.mb-about-info{
+    /* border: 2px solid blue; */
+    padding-left: 24px;
+}
+.mb-about-parent .mob-photos{
+    /* border: 2px solid red; */
+    width: 472px;
+    height: 516px;
+}
+.mob-photos ul{
+    width: 64px;
+    height: 640px;
+    /* border: 2px solid aqua; */
+}
+.mob-photos ul li img{
+    height: 100%;
+    width: 100%;
+}
+.mob-photos ul li{
+    height:60px;
+    width: 60px;
+    padding: 5px;
+    /* border: 2px solid black; */
+}
+.mb-reviews{
+    /* border: 2px solid black;  */
+    width: 757px;
+    padding-left: 24px;
+}
+.mb-reviews .mb-information .mb-color span,.mb-storage span{
+    height: 52px;
+    width: 52px;
+}
+.mb-reviews .delhivery input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+.mb-with-acc .general div{
+    width: 244px;
+    height: 257px;
+    padding: 16px;
+}
+.general input{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+}
+.rating-circle b{
+    display: inline-block;
+    border-radius: 50%;
+    border-bottom: 5px solid green;
+    border-right: 5px solid green;
+    padding: 20px 10px;
+    height: 77px;
+    margin-bottom: 8px;
+    width:80px;
+}
+.mb-tp-photo{
+    width: 420px;
+    height:100px;
+}
+.mb-tp-photo .img-boxes,.tp1-review .img-boxes{
+    width: 80px;
+    height: 80px;
+}
