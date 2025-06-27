@@ -14,7 +14,7 @@ A clean and responsive clone of the Flipkart homepage built using **HTML5**, **C
 
 ## 📸 Preview
 
-![Flipkart Clone Preview](![Flipkart-Landing Page](https://github.com/user-attachments/assets/88b2d1bb-567e-4a87-82ce-f679d26215dd)
+![Flipkart-Landing Page](https://github.com/user-attachments/assets/88b2d1bb-567e-4a87-82ce-f679d26215dd
 ) <!-- Replace with actual preview image -->
 
 ---
